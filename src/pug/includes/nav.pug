@@ -1,0 +1,23 @@
+nav.nav       
+  .container-fluid.container-md
+    .nav__wrapper 
+      a.logo-brand(href="#" aria-label="Home")
+        img(src="img/logo-brand.svg", alt="Logo") 
+
+      ul.nav__menu#mobileMenu
+        li: a(href="#") Find a Job 
+        li: a(href="#") About us 
+        li: a(href="#") Find Talent 
+        li: a(href="#") Insights
+        li: a(href="#") Contact Us
+
+      ul.nav__sub-links 
+        li: a(href="#" style="background-image: url('img/icon-fb.svg')" aria-label="Facebook").social__item Facebook 
+        li: a(href="#" style="background-image: url('img/icon-in.svg')" aria-label="LinkedIn").social__item Linkedin
+
+      .d-lg-none 
+        button(type="button", aria-label="Menu").burger-menu#burgerBtn
+          span 
+          span 
+          span
+        

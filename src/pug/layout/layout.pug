@@ -1,0 +1,25 @@
+doctype html
+html(lang="en")
+    
+    block head
+      include ../includes/head.pug
+
+    body 
+      include ../includes/nav.pug
+
+      block header
+
+      main 
+        block content
+
+      block footer
+        include ../includes/foot.pug
+
+      block modals 
+        include ../includes/modals.pug
+
+      block scripts 
+        script(src="js/script.js") 
+
+      
+

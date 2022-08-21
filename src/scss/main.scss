@@ -471,15 +471,16 @@ h6 {
     padding: 0;
     margin: 0;
     list-style: none;
-    column-gap: 50px;
+    column-gap: 30px;
+    font-size: 18px;
 
     @media screen and (max-width: 1400px) {
-      column-gap: 30px;
-      font-size: 18px;
+      column-gap: 25px;
+      font-size: 16px;
     }
 
     @media screen and (max-width: 1200px) {
-      font-size: 16px;
+      font-size: 14px;
     }
 
     @media screen and (max-width: 993px) {

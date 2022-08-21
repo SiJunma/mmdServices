@@ -1,0 +1,66 @@
+extends ../layout/layout.pug
+
+block header
+  header.header
+    .bg
+      img(src="img/header-img4.jpg")
+    .container 
+      .content-full
+        h1.title Insights
+        p Companies across the United States are looking for candidates just like you. Start your search today!
+
+block content
+  section.search-form
+    .container 
+      .content 
+        h2.title Search Articles
+        form.search-form__form(action="")
+          input#jobTitle(required type="text", name="jobTitle", placeholder="Enter keyword or Title") 
+          button.btn(href="#") Search Articles
+
+  section.ta-list
+    .container 
+      .ta-list__wrapper 
+        .ta-list__item
+          img.img(src="http://www.mmdtech.com/wp-content/uploads/EB-1-680x330.jpg", alt="Article1")
+          .ta-list__content
+            a(href="http://"): h3.title The Counteroffer As A Form of Blackmail
+            .ta-list__desk
+              p As a recruiter of many years, I support and encourage healthy negotiating. In fact, I am happy to coach candidates through it as they consider multiple offers. There are many situations where counteroffers come up unplanned, from the current employer and alternative offers come in in parallel with each other, because candidates interview with several employers at the same time. It is absolutely appropriate to leverage them against one another. 
+
+        .ta-list__item
+          img.img(src="http://www.mmdtech.com/wp-content/uploads/MicrosoftTeams-image-680x330.jpg", alt="Article2")
+          .ta-list__content
+            a(href="http://"): h3.title Can 2020 Grads Get Jobs? Sh*t Just Got Real.
+            .ta-list__desk
+              p I am a career IT recruiter of many years as well as the founder of a successful staffing firm since 2006, who truly enjoys the mentoring piece. I often speak to recent college grads about starting their job search, and I just love helping young people take their first steps towards a career in IT. They tell me about their dreams, and I tell them about different ways of pursuing them. I can’t think of anything more rewarding!
+
+        .ta-list__item
+          img.img(src="http://www.mmdtech.com/wp-content/uploads/ct-tech-skills-talent-bsi-photos-0911-006-680x330.jpg", alt="Article3")
+          .ta-list__content
+            a(href="http://"): h3.title Chicago Tribune Interviews MMD
+            .ta-list__desk
+              p Our resident “Head Honcho”, aka “Queen of Staffing”, aka Maria Dubov, has recently been interviewed by the Chicago Tribune for an article on challenges in today’s job market. Give it a read and let us know your thoughts.
+
+        .ta-list__item
+          img.img(src="http://www.mmdtech.com/wp-content/uploads/interrogation2.jpg", alt="Article4")
+          .ta-list__content
+            a(href="http://"): h3.title Stop Preparing Your Defense For A Job Interview, Ask Questions Instead
+            .ta-list__desk
+              p When our candidates get ready for their job interviews, they tend to focus on preparing their answers to all the questions they are likely to be asked. This is certainly a great approach. However, hiring managers today are just as interested in “good” answers, as they are in “good” questions.  Corporate America is changing and companies are no longer looking to fill the seats with hard-working “yes-wo/men”, they want business-minded individuals capable of making a difference.  Preparing your questions would set you apart from the “B” players and make you look like a rare gem.
+
+        .ta-list__item
+          img.img(src="http://www.mmdtech.com/wp-content/uploads/Tom_Leonard_717x445-680x330.jpg", alt="Article5")
+          .ta-list__content
+            a(href="http://"): h3.title Preparing For Your Annual Review with Tom Leonard, Global IT Director at Newell Rubbermaid
+            .ta-list__desk
+              p Tom Leonard (LinkedIN) has been one of the most influential mentors throughout my career in IT staffing. I find myself especially fortunate to have met this outstanding IT leader and a stand-up guy 14 years ago. I was able to benefit from his candid advice and encouragement for so many years! I got to watch Tom climb the corporate ladder along with many other managers, whom I had met around the same time. I learned that there is more than one way to progress in a corporate world.
+
+
+block scripts
+  script(src="js/script.js")
+
+  
+ 
+
+

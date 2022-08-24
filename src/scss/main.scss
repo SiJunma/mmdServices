@@ -140,6 +140,10 @@ h6 {
     height: 50px;
     padding: 0 24px;
     border: none;
+
+    @media screen and (max-width: 576px) {
+      height: 44px;
+    }
   }
 
   &-textarea {
@@ -1525,18 +1529,48 @@ h6 {
 
   .btn-group {
     width: 100%;
+    gap: 20px;
 
     & > * {
       flex-basis: 50%;
+
+      @media screen and (max-width: 576px) {
+        flex-basis: unset;
+      }
+    }
+
+    @media screen and (max-width: 576px) {
+      flex-direction: column;
     }
   }
 
   .btn-file {
     width: 100%;
     justify-content: space-between;
+
+    @media screen and (max-width: 576px) {
+      flex-direction: column;
+      row-gap: 10px;
+
+      & > * {
+        width: 100%;
+        text-align: center;
+      }
+    }
   }
 
   .btn[type="submit"] {
-    width: 270px;
+    max-width: 270px;
+    width: 100%;
+  }
+
+  .btn {
+    height: 50px;
+    font-size: 18px;
+
+    @media screen and (max-width: 576px) {
+      height: 44px;
+      font-size: 16px;
+    }
   }
 }

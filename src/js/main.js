@@ -18,30 +18,82 @@ $( document ).ready(function() {
     });
 
     let handler = function(e) {
-        if ($(e.target).closest("#mobileMenu").length === 0 && $(e.target).closest("#burgerBtn").length === 0) {
-          e.stopPropagation();
-          $('#mobileMenu').removeClass('opened');
-          $('#burgerBtn').removeClass('opened');
-          $(document).unbind('click', handler);
-        }
+      if ($(e.target).closest("#mobileMenu").length === 0 && $(e.target).closest("#burgerBtn").length === 0) {
+        e.stopPropagation();
+        $('#mobileMenu').removeClass('opened');
+        $('#burgerBtn').removeClass('opened');
+        $(document).unbind('click', handler);
+      }
     }
   }
   mobileMenu();
-  
-  
-  new Splide( '.header .splide', {
-    type: 'loop',
-    speed: 300,
-    perMove: 1,
-    arrows: true,
-    pagination: false,
-    breakpoints: {
-      768: {
-        arrows: false,
+
+    
+  function modalInit(btn) {
+    $(btn).on('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      
+      let targetModal = $($( this ).attr('data-target'));
+      
+      let closeModal = function() {
+        targetModal.hide();
+        targetModal.find('.input-form').val('');
+        targetModal.find('.input-file-box').text('No file chosen');
+        $('body').css('overflow', '');
+        // $(document).unbind('click', handler);
+      };
+
+      let handler = function(e) {
+        if ($(e.target).hasClass('modal')) {
+          e.stopPropagation();
+          closeModal();
+        }
       }
-    }
+
+      targetModal.css('display', 'flex');
+      $('body').css('overflow', 'hidden');
+      // $(document).bind('click', handler);
+
+      let closeBtn = targetModal.find('.btn-close');
+      closeBtn.one('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        closeModal();
+      });
+    })
+  }
+  modalInit('.modal-open');
+
+
+  function fileInputInit(btn) {
+    $(btn).change(function(e) {
+      if(e.target.files[0]) {
+        let fileName = e.target.files[0].name;
+        $(this).siblings('.input-file-box').text(fileName);
+      }
+    });
+  }
+  fileInputInit('.input-file-actual');
   
-  }).mount();
+  if($('.header .splide').length) {
+    new Splide( '.header .splide', {
+      type: 'loop',
+      speed: 300,
+      perMove: 1,
+      arrows: true,
+      pagination: false,
+      breakpoints: {
+        768: {
+          arrows: false,
+        }
+      }
+    
+    }).mount();
+  }
   
 });
+
+
 

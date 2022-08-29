@@ -697,6 +697,40 @@ h6 {
     }
   }
 
+  &_invert {
+    background-color: #fff;
+    padding: $sectionPaddingDesk;
+    box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.52);
+  
+    @media screen and (max-width: 1400px) {
+      padding: $sectionPaddingDesk2;
+    }
+  
+    @media screen and (max-width: 1200px) {
+      padding: $sectionPaddingDesk3;
+      padding-bottom: 70px;
+    }
+  
+    @media screen and (max-width: 768px) {
+      padding: $sectionPaddingDesk3;
+      box-shadow: none;
+    }
+  
+    @media screen and (max-width: 576px) {
+      padding: $sectionPaddingDesk4;
+      padding-bottom: 50px;
+    }
+  
+    h3.title {
+      color: #004181;
+      text-align: center;
+  
+      @media screen and (max-width: 993px) {
+        text-align: left;
+      }
+    }
+  }
+
   &__wrapper  {
     display: flex;
     justify-content: center;
@@ -1647,6 +1681,61 @@ h6 {
     }
 
     margin-bottom: 15px;
+  }
+
+  h3 {
+    margin-top: 60px;
+    margin-bottom: 25px;
+  }
+
+  .container > *:first-child {
+    margin-top: 0;
+  }
+}
+
+.def-blue {
+  padding: $sectionPaddingDesk;
+  background-color: #004181;
+  color: #FFFFFF;
+  font-weight: 300;
+  line-height: 140%;
+
+  @media screen and (max-width: 1400px) {
+    padding: $sectionPaddingDesk2;
+  }
+
+  @media screen and (max-width: 1200px) {
+    padding: $sectionPaddingDesk3;
+  }
+
+  @media screen and (max-width: 768px) {
+    background-color: #0059B1;
+  }
+
+  @media screen and (max-width: 576px) {
+    padding: $sectionPaddingDesk4;
+  }
+
+  b {
+    font-weight: 600;
+  }
+
+  a[download] {
+    display: flex;
+    column-gap: 14px;
+    color: #A7CAFF;
+    font-weight: 500;
+    text-decoration: none;
+
+    img {
+      margin-top: -3px;
+    }
+
+    margin-bottom: 15px;
+  }
+
+  .btn {
+    margin-top: 40px;
   }
 
   h3 {

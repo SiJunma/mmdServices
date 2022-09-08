@@ -743,7 +743,7 @@ h6 {
   }
 
   &__item {
-    background: #3A89FF;
+    background-color: #3A89FF;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -817,10 +817,12 @@ h6 {
   &_animated {
     .cards__item {
       perspective: 1000px;
-      padding: 50px 20px 50px;
+      padding: 0;
+      background-color: transparent;
 
       @media screen and (max-width: 768px) {
         padding: 30px 20px 30px;
+        background-color: #3A89FF;
       }
 
       &-inner {
@@ -850,6 +852,7 @@ h6 {
         height: 100%;
         -webkit-backface-visibility: hidden; /* Safari */
         backface-visibility: hidden;
+        background-color: #3A89FF;
 
         display: flex;
         flex-direction: column;
@@ -858,9 +861,12 @@ h6 {
         width: 100%; /* be as wide as parent */
         margin-right: -100%; /* take up no width */
 
+        padding: 50px 20px 50px;
+
         @media screen and (max-width: 768px) {
           margin-right: unset;
           height: unset;
+          padding: 0;
         }
       }
 

@@ -755,6 +755,10 @@ h6 {
     text-decoration: none;
     color: #fff;
 
+    &:hover {
+      color: inherit;
+    }
+
     @media screen and (max-width: 1400px) {
       padding: 18px;
       padding-top: 28px;
@@ -800,6 +804,83 @@ h6 {
 
       @media screen and (max-width: 768px) {
         font-size: 13px;
+      }
+    }
+  }
+
+  a.cards__item {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &_animated {
+    .cards__item {
+      perspective: 1000px;
+      padding: 50px 20px 50px;
+
+      @media screen and (max-width: 768px) {
+        padding: 30px 20px 30px;
+      }
+
+      &-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+
+        &:after {
+          content: '';
+          display: table;
+          clear: both;
+        }
+      }
+
+      &:hover .cards__item-inner {
+        transform: rotateY(180deg);
+
+        @media screen and (max-width: 768px) {
+          transform: unset;
+        }
+      }
+
+      &-front, &-back {
+        height: 100%;
+        -webkit-backface-visibility: hidden; /* Safari */
+        backface-visibility: hidden;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 100%; /* be as wide as parent */
+        margin-right: -100%; /* take up no width */
+
+        @media screen and (max-width: 768px) {
+          margin-right: unset;
+          height: unset;
+        }
+      }
+
+      &-front {
+        float: left; /* display side-by-side */
+
+        @media screen and (max-width: 768px) {
+          float: unset;
+        }
+      }
+
+      &-back {
+        transform: rotateY(180deg);
+        position: absolute;
+        left: 0;
+
+        @media screen and (max-width: 768px) {
+          position: static;
+          transform: unset;
+        }
       }
     }
   }
@@ -1031,7 +1112,6 @@ h6 {
 
   &__wrapper {
     display: flex;
-    align-items: center;
     column-gap: 3em;
 
     @media screen and (max-width: 1200px) {

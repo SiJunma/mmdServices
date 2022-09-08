@@ -47,25 +47,42 @@ block header
 
 
 block content
-  section.cards 
+  section.cards.cards_animated 
     .container 
       .cards__wrapper 
+
         .cards__item
-          img.img(src="img/icon1.svg", alt="Icon")
-          h6.title Philanthropy
-          .desc: p  Neque, aenean non dui sem hac massa lorem fermentum arcu. Nec eget consectetur sed fames lacus, vitae. Sed phasellus.
+          .cards__item-inner
+            .cards__item-front
+              img.img(src="img/icon1.svg", alt="Icon")
+              h6.title Philanthropy
+            .cards__item-back  
+              .desc: p  Neque, aenean non dui sem hac massa lorem fermentum arcu. Nec eget consectetur sed fames lacus, vitae. Sed phasellus.
+        
+
         .cards__item
-          img.img(src="img/icon2.svg", alt="Icon")
-          h6.title Job Search Support
-          .desc: p  Vestibulum magna justo ultricies mauris. Quis netus gravida habitasse quam tristique massa hac. Nulla et velit ipsum eget magna tincidunt.
+          .cards__item-inner
+            .cards__item-front
+              img.img(src="img/icon2.svg", alt="Icon")
+              h6.title Job Search Support
+            .cards__item-back  
+              .desc: p  Vestibulum magna justo ultricies mauris. Quis netus gravida habitasse quam tristique massa hac. Nulla et velit ipsum eget magna tincidunt.
+        
         .cards__item
-          img.img(src="img/icon3.svg", alt="Icon")
-          h6.title Our Friends in HR
-          .desc: p  Purus urna sollicitudin massa condimentum luctus nulla. Sapien volutpat dui sit etiam nam est viverra enim. Enim placerat.
+          .cards__item-inner
+            .cards__item-front
+              img.img(src="img/icon3.svg", alt="Icon")
+              h6.title Our Friends in HR
+            .cards__item-back  
+              .desc: p  Purus urna sollicitudin massa condimentum luctus nulla. Sapien volutpat dui sit etiam nam est viverra enim. Enim placerat.
+
         .cards__item
-          img.img(src="img/icon4.svg", alt="Icon")
-          h6.title Careersupport
-          .desc: p  Faucibus scelerisque lorem sagittis eget morbi. Non amet, arcu, nunc, aliquet orci dui. Turpis mauris vulputate magna posuere.
+          .cards__item-inner
+            .cards__item-front
+              img.img(src="img/icon4.svg", alt="Icon")
+              h6.title Careersupport
+            .cards__item-back  
+              .desc: p  Faucibus scelerisque lorem sagittis eget morbi. Non amet, arcu, nunc, aliquet orci dui. Turpis mauris vulputate magna posuere.
 
   section.home-about 
     .container  

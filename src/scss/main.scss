@@ -84,6 +84,7 @@ h2 {
 
 h3 {
   font-size: 43px;
+  margin-top: 50px;
   margin-bottom: 25px;
 
   @media screen and (max-width: 1400px) {
@@ -97,6 +98,7 @@ h3 {
   @media screen and (max-width: 768px) {
     font-size: 24px;
     margin-bottom: 15px;
+    margin-top: 40px;
   }
 }
 
@@ -114,6 +116,8 @@ h4 {
 
 h5 {
   font-size: 24px;
+  margin-top: 30px;
+  margin-bottom: 15px;
 
   @media screen and (max-width: 1400px) {
     font-size: 22px;
@@ -1788,11 +1792,6 @@ h6 {
     margin-bottom: 15px;
   }
 
-  h3 {
-    margin-top: 60px;
-    margin-bottom: 25px;
-  }
-
   .container > *:first-child {
     margin-top: 0;
   }
@@ -1841,11 +1840,6 @@ h6 {
 
   .btn {
     margin-top: 40px;
-  }
-
-  h3 {
-    margin-top: 60px;
-    margin-bottom: 25px;
   }
 
   .container > *:first-child {

@@ -1514,6 +1514,27 @@ h6 {
   @media screen and (max-width: 375px) {
     font-size: 12px;
   }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    row-gap: 5px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 475px) {
+      flex-direction: column;
+
+      .divider {
+        display: none;
+      }
+    }
+  }
+
+  a {
+    color: inherit;
+  }
 }
 
 .contact-us  {

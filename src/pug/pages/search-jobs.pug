@@ -1,0 +1,130 @@
+extends ../layout/layout.pug
+
+block header
+  header.header
+    .bg
+      img(src="img/header-img2.jpg")
+    .container 
+      .content-full
+        h1.title Find a Job
+        p Companies across the United States are looking for candidates just like you. Start your search today!
+
+block content
+  section.find-search 
+    .container 
+      .content 
+        h2.title Search Available Jobs
+        form.find-search__form(action="")
+          input#jobTitle(required type="text", name="jobTitle", placeholder="Job title or keyword") 
+          input#jobZip(required type="text", name="jobZip", placeholder="Location or Zip Code")
+          a.btn(href="search-jobs.html?filters:title=text&location=text") Search Jobs
+      .filters-bar 
+        button(type="button" data-target="#searchFilters").btn.btn-filters.modal-open Filters
+
+        .filters-bar__select
+          | Sort by:
+          .dropdown
+            .select
+              span Newest first
+            input(type='hidden' name='Sorting')
+            ul.dropdown-menu
+              li#newest Newest first
+              li#oldest Oldest first
+
+        
+        //- label.select
+        //-  | Sort by:
+        //-  select
+        //-   option Newest first
+        //-   option Oldest first
+
+  section.job-list
+    .container
+      h2.title Search Results 
+
+      .job-list__wrapper 
+      
+        a(href="job.html").job-list__item
+          h3.title Integration Analyst / Developer
+          .job-list__info 
+            span August 2, 2022
+            span Chicago, IL
+
+          .job-list__desk
+            p Our client is known for crafting one of the most strategic, process driven logistics solutions that has changed the standards in multiple marketplaces. With a nationwide footprint, they leverage their network to deliver quality and reliable services and put a strong emphasis on continuous growth.
+
+        a(href="job.html").job-list__item
+          h3.title Integration Lead
+          .job-list__info 
+            span August 3, 2022
+            span Chicago, IL
+
+          .job-list__desk
+            p We are looking for an Integration Lead who will be responsible for overseeing the team responsible for EDI Integrations. This person must have a strong sense of leadership, your main objective will be to track and drive your team’s performance to ensure they are meeting business goals and objectives.
+
+        a(href="job.html").job-list__item
+          h3.title Lead Developer
+          .job-list__info 
+            span June 17, 2022
+            span Chicago, IL
+            span React.js
+
+          .job-list__desk
+            p Our highly progressive client is a holdings company HQ’ed in Chicago with offices nationwide. They specialize in direct- to- consumer, highly customizable insurance product offerings. They are seeking a full-time, Remote Lead Web Developer to help grow their direct-to-consumer platform and expand their existing online marketing strategy.
+
+        a(href="job.html").job-list__item
+          h3.title Chief Technology Officer (CTO)
+          .job-list__info 
+            span January 20, 2022
+            span Chicago, IL
+
+          .job-list__desk
+            p Our client is an established tech company, a pioneer in the latest telecom technologies, They are looking for a Chief Technology Officer (CTO) The role is fully remote although some occasional travel may be required (under 10%) A very competitive package with a hefty base, aggressive bonus structure, and equity offering is available.
+
+      .pagination 
+          a(href="#").prev Previous page
+          span.current(aria-current='page') 1
+          span of
+          span.total(aria-current='total pages') 25
+          a(href="#").next Next page 
+
+  section.cards.cards_x6
+    .container 
+      h2.title Browse Jobs
+      
+      .cards__wrapper 
+
+        a(href="category-jobs.html").cards__item
+          img.img(src="img/icon13.svg", alt="Icon")
+          h6.title Remote Positions
+
+        a(href="category-jobs.html").cards__item
+          img.img(src="img/icon8.svg", alt="Icon")
+          h6.title Enterprise Applications
+
+        a(href="category-jobs.html").cards__item
+          img.img(src="img/icon9.svg", alt="Icon")
+          h6.title Leadership
+
+        a(href="category-jobs.html").cards__item
+          img.img(src="img/icon10.svg", alt="Icon")
+          h6.title Open Source
+
+        a(href="category-jobs.html").cards__item
+          img.img(src="img/icon11.svg", alt="Icon")
+          h6.title Support / Network / Systems / Voice
+
+        a(href="category-jobs.html").cards__item
+          img.img(src="img/icon12.svg", alt="Icon")
+          h6.title Technical Sales
+
+       
+
+
+block scripts
+  script(src="js/script.js")
+
+  
+ 
+
+

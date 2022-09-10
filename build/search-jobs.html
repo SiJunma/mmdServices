@@ -46,34 +46,76 @@
       </div>
     </nav>
     <header class="header">
-      <div class="bg"><img src="img/header-img3.jpg"></div>
+      <div class="bg"><img src="img/header-img2.jpg"></div>
       <div class="container"> 
         <div class="content-full">
-          <h1 class="title">Privacy Policy</h1>
+          <h1 class="title">Find a Job</h1>
+          <p>Companies across the United States are looking for candidates just like you. Start your search today!</p>
         </div>
       </div>
     </header>
     <main> 
-      <section class="def-blue"> 
+      <section class="find-search"> 
         <div class="container"> 
-          <h3 class="title">Our terms</h3>
-          <p>At MMD Services, Inc. we consider the privacy of our visitors to be extremely important. This privacy policy document describes in detail the types of personal information is collected and recorded by www.mmdtech.com (the Website) and how we use it.</p>
-          <h5>Log Files</h5>
-          <p>Like many other Web sites, the Website makes use of log files. These files merely log visitors to the site – usually a standard procedure for hosting companies and a part of hosting services’s analytics. The information inside the log files includes internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date/time stamp, referring/exit pages, and possibly the number of clicks. This information is used to analyze trends, administer the site, track user’s movement around the site, and gather demographic information. IP addresses, and other such information are not linked to any information that is personally identifiable.</p>
-          <h5>Cookies and Web Beacons</h5>
-          <p>The Website uses cookies to store information about visitors’ preferences, to record user-specific information which pages the site visitor accesses or visits, and to personalize or customize our web page content based upon visitors’ browser type or other information that the visitor sends via their browser.</p>
-          <p>If you wish to disable cookies, you may do so through your individual browser options. More detailed information about cookie management with specific web browsers can be found at the browsers’ respective websites.</p>
-          <h5>Our Advertising Partners</h5>
-          <p>Our Website does not advertise for any other entity or business other than MMD Services, Inc. or its employees.</p>
-          <h5>Security</h5>
-          <p>To safeguard your personal information, we have documented procedures in place that are audited by recognized data privacy experts.</p>
-          <h5>Online Privacy Policy Only</h5>
-          <p>This privacy policy applies only to our online activities and is valid for visitors to our website and regarding information shared and/or collected there. This policy does not apply to any information collected offline or via channels other than this website.</p>
-          <h5>Consent</h5>
-          <p>By using our website, you hereby consent to our privacy policy and agree to its terms.</p>
-          <h5>Update</h5>
-          <p>This Privacy Policy was last updated on: Thursday, July 14th, 2016. Should we update, amend or make any changes to our privacy policy, those changes will be posted here.</p>
-          <p>If you require any more information or have any questions about our Privacy Policy, please feel free to contact us by email at Contact Us.</p>
+          <div class="content"> 
+            <h2 class="title">Search Available Jobs</h2>
+            <form class="find-search__form" action="">
+              <input id="jobTitle" required type="text" name="jobTitle" placeholder="Job title or keyword">
+              <input id="jobZip" required type="text" name="jobZip" placeholder="Location or Zip Code"><a class="btn" href="search-jobs.html?filters:title=text&amp;location=text">Search Jobs</a>
+            </form>
+          </div>
+          <div class="filters-bar"> 
+            <button class="btn btn-filters modal-open" type="button" data-target="#searchFilters">Filters</button>
+            <div class="filters-bar__select">Sort by:
+              <div class="dropdown">
+                <div class="select"><span>Newest first</span></div>
+                <input type="hidden" name="Sorting">
+                <ul class="dropdown-menu">
+                  <li id="newest">Newest first</li>
+                  <li id="oldest">Oldest first</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="job-list">
+        <div class="container">
+          <h2 class="title">Search Results </h2>
+          <div class="job-list__wrapper"> <a class="job-list__item" href="job.html">
+              <h3 class="title">Integration Analyst / Developer</h3>
+              <div class="job-list__info"> <span>August 2, 2022</span><span>Chicago, IL</span></div>
+              <div class="job-list__desk">
+                <p>Our client is known for crafting one of the most strategic, process driven logistics solutions that has changed the standards in multiple marketplaces. With a nationwide footprint, they leverage their network to deliver quality and reliable services and put a strong emphasis on continuous growth.</p>
+              </div></a><a class="job-list__item" href="job.html">
+              <h3 class="title">Integration Lead</h3>
+              <div class="job-list__info"> <span>August 3, 2022</span><span>Chicago, IL</span></div>
+              <div class="job-list__desk">
+                <p>We are looking for an Integration Lead who will be responsible for overseeing the team responsible for EDI Integrations. This person must have a strong sense of leadership, your main objective will be to track and drive your team’s performance to ensure they are meeting business goals and objectives.</p>
+              </div></a><a class="job-list__item" href="job.html">
+              <h3 class="title">Lead Developer</h3>
+              <div class="job-list__info"> <span>June 17, 2022</span><span>Chicago, IL</span><span>React.js</span></div>
+              <div class="job-list__desk">
+                <p>Our highly progressive client is a holdings company HQ’ed in Chicago with offices nationwide. They specialize in direct- to- consumer, highly customizable insurance product offerings. They are seeking a full-time, Remote Lead Web Developer to help grow their direct-to-consumer platform and expand their existing online marketing strategy.</p>
+              </div></a><a class="job-list__item" href="job.html">
+              <h3 class="title">Chief Technology Officer (CTO)</h3>
+              <div class="job-list__info"> <span>January 20, 2022</span><span>Chicago, IL</span></div>
+              <div class="job-list__desk">
+                <p>Our client is an established tech company, a pioneer in the latest telecom technologies, They are looking for a Chief Technology Officer (CTO) The role is fully remote although some occasional travel may be required (under 10%) A very competitive package with a hefty base, aggressive bonus structure, and equity offering is available.</p>
+              </div></a></div>
+          <div class="pagination"> <a class="prev" href="#">Previous page</a><span class="current" aria-current="page">1</span><span>of</span><span class="total" aria-current="total pages">25</span><a class="next" href="#">Next page </a></div>
+        </div>
+      </section>
+      <section class="cards cards_x6">
+        <div class="container"> 
+          <h2 class="title">Browse Jobs</h2>
+          <div class="cards__wrapper"> <a class="cards__item" href="category-jobs.html"><img class="img" src="img/icon13.svg" alt="Icon">
+              <h6 class="title">Remote Positions</h6></a><a class="cards__item" href="category-jobs.html"><img class="img" src="img/icon8.svg" alt="Icon">
+              <h6 class="title">Enterprise Applications</h6></a><a class="cards__item" href="category-jobs.html"><img class="img" src="img/icon9.svg" alt="Icon">
+              <h6 class="title">Leadership</h6></a><a class="cards__item" href="category-jobs.html"><img class="img" src="img/icon10.svg" alt="Icon">
+              <h6 class="title">Open Source</h6></a><a class="cards__item" href="category-jobs.html"><img class="img" src="img/icon11.svg" alt="Icon">
+              <h6 class="title">Support / Network / Systems / Voice</h6></a><a class="cards__item" href="category-jobs.html"><img class="img" src="img/icon12.svg" alt="Icon">
+              <h6 class="title">Technical Sales</h6></a></div>
         </div>
       </section>
     </main>

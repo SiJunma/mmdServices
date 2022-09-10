@@ -110,3 +110,47 @@
               a(href="https://www.linkedin.com/in/athomas4" aria-label="LinkedIn", target="_blank")
                 img(src="img/icon-in.svg", alt="Linkedin")
                 | Linkedin
+
+.modal#searchFilters
+  // Modal content
+  .modal-content
+    .modal-header
+      h3.title Filters
+      
+      button.btn-close(aria-label="Close modal", type="button")
+
+    .modal-body
+      h5.title Choose categoties: 
+      .filters-group
+        label.checkbox
+          | Remote Positions
+          input(type='checkbox')
+          span.checkmark
+
+        label.checkbox
+          | Enterprise Applications
+          input(type='checkbox')
+          span.checkmark
+
+        label.checkbox
+          | Leadership
+          input(type='checkbox')
+          span.checkmark
+          
+        label.checkbox
+          | Open Source
+          input(type='checkbox')
+          span.checkmark
+
+        label.checkbox
+          | Technical Sales
+          input(type='checkbox')
+          span.checkmark
+          
+        label.checkbox
+          | Support / Network / Systems / Voice
+          input(type='checkbox')
+          span.checkmark
+
+
+      button.btn(type="button").apply-close Apply

@@ -21,7 +21,7 @@ block content
           h2.title Submit Your Resume
 
           p Lorem ipsum dolor sit amet, onsectetur adipiscing elit.  Lorem ipsum dolor sit amet, onsectetur adipiscing elit.
-          a.btn(href="#", data-target="#resumeApply").modal-open Apply Now
+          button.btn(data-target="#resumeApply" type="button").modal-open Apply Now
 
 
   section.find-search 
@@ -31,7 +31,7 @@ block content
         form.find-search__form(action="")
           input#jobTitle(required type="text", name="jobTitle", placeholder="Job title or keyword") 
           input#jobZip(required type="text", name="jobZip", placeholder="Location or Zip Code")
-          button.btn(href="#", type="button") Search Jobs
+          a.btn(href="search-jobs.html?filters:title=text&location=text") Search Jobs
 
   section.cards.cards_col-3 
     .container 
@@ -39,27 +39,27 @@ block content
       
       .cards__wrapper 
 
-        a(href="#").cards__item
+        a(href="category-jobs.html").cards__item
           img.img(src="img/icon13.svg", alt="Icon")
           h6.title Remote Positions
 
-        a(href="#").cards__item
+        a(href="category-jobs.html").cards__item
           img.img(src="img/icon8.svg", alt="Icon")
           h6.title Enterprise Applications
 
-        a(href="#").cards__item
+        a(href="category-jobs.html").cards__item
           img.img(src="img/icon9.svg", alt="Icon")
           h6.title Leadership
 
-        a(href="#").cards__item
+        a(href="category-jobs.html").cards__item
           img.img(src="img/icon10.svg", alt="Icon")
           h6.title Open Source
 
-        a(href="#").cards__item
+        a(href="category-jobs.html").cards__item
           img.img(src="img/icon11.svg", alt="Icon")
           h6.title Support / Network / Systems / Voice
 
-        a(href="#").cards__item
+        a(href="category-jobs.html").cards__item
           img.img(src="img/icon12.svg", alt="Icon")
           h6.title Technical Sales
 

@@ -297,7 +297,6 @@ h6 {
     padding-bottom: 70px;
     padding-top: 60px;
     min-height: 620px;
-    max-width: 540px;
 
     display: flex;
     flex-direction: column;
@@ -336,6 +335,10 @@ h6 {
       @media screen and (max-width: 768px) {
         margin-top: 10px;
       }
+    }
+
+    p {
+      max-width: 540px;
     }
   }
 

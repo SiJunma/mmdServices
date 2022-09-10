@@ -6,41 +6,13 @@ block header
       img(src="img/header-img2.jpg")
     .container 
       .content-full
-        h1.title Search Jobs
+        h1.title Remote Positions
         p Companies across the United States are looking for candidates just like you. Start your search today!
 
 block content
-  section.find-search 
-    .container 
-      .content 
-        h2.title Search Available Jobs
-        form.find-search__form(action="")
-          input#jobTitle(required type="text", name="jobTitle", placeholder="Job title or keyword") 
-          input#jobZip(required type="text", name="jobZip", placeholder="Location or Zip Code")
-          a.btn(href="search-jobs.html?filters:title=text&location=text") Search Jobs
-      .filters-bar 
-        button(type="button" data-target="#searchFilters").btn.btn-filters.modal-open Filters
-
-        .filters-bar__select
-          | Sort by:
-          .dropdown
-            .select
-              span Newest first
-            input(type='hidden' name='Sorting')
-            ul.dropdown-menu
-              li#newest Newest first
-              li#oldest Oldest first
-
-        
-        //- label.select
-        //-  | Sort by:
-        //-  select
-        //-   option Newest first
-        //-   option Oldest first
-
   section.job-list
     .container
-      h2.title Search Results 
+      h2.title Jobs in Remote Positions Category
 
       .job-list__wrapper 
       

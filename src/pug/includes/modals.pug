@@ -68,7 +68,13 @@
         
         textarea.input-textarea#applyerMsg2(name="Applyer Letter", placeholder="Message")
 
-        button.btn(href="#", type="submit") Submit
+        .btn-group
+          label.checkbox
+            | Subscribe to MMD newsletter
+            input(type='checkbox' checked='checked')
+            span.checkmark
+
+          button.btn(href="#", type="submit") Submit
 
 
 .modal#memberOverview

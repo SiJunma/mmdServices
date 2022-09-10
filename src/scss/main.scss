@@ -1831,3 +1831,36 @@ h6 {
     margin-top: 0;
   }
 }
+
+.pagination {
+  padding-top: 60px;
+  display: flex;
+  column-gap: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  justify-content: center;
+  align-items: center;
+
+  .prev, .next {
+    font-size: 0;
+    width: 17px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 5px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .prev {
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='17' viewBox='0 0 16 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.5 8.90539L15.2443 0.33313V16.7919L0.5 8.90539Z' fill='white'/%3E%3C/svg%3E%0A");
+  }
+
+  .next {
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='17' viewBox='0 0 16 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.5 8.11585L0.755711 16.6881L0.755712 0.229369L15.5 8.11585Z' fill='white'/%3E%3C/svg%3E%0A");
+  }
+}

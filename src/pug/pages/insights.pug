@@ -55,7 +55,12 @@ block content
             a(href="http://"): h3.title Preparing For Your Annual Review with Tom Leonard, Global IT Director at Newell Rubbermaid
             .ta-list__desk
               p Tom Leonard (LinkedIN) has been one of the most influential mentors throughout my career in IT staffing. I find myself especially fortunate to have met this outstanding IT leader and a stand-up guy 14 years ago. I was able to benefit from his candid advice and encouragement for so many years! I got to watch Tom climb the corporate ladder along with many other managers, whom I had met around the same time. I learned that there is more than one way to progress in a corporate world.
-
+      .pagination 
+        a(href="#").prev Previous page
+        span.current(aria-current='page') 1
+        span of
+        span.total(aria-current='total pages') 25
+        a(href="#").next Next page 
 
 block scripts
   script(src="js/script.js")

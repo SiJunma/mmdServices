@@ -91,6 +91,8 @@ $( document ).ready(function() {
       perMove: 1,
       arrows: true,
       pagination: false,
+      autoplay: true,
+      interval: 5000,
       breakpoints: {
         768: {
           arrows: false,

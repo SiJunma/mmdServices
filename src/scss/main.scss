@@ -2270,3 +2270,20 @@ h6 {
 .job-single {
   padding-bottom: 10px;
 }
+
+.back-ins {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 20px;
+
+  &__link {
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+
+    &:hover {
+      color: inherit;
+    }
+  }
+}

@@ -25,21 +25,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 84px;
-  margin-bottom: 40px;
+  font-size: 70px;
+  margin-bottom: 30px;
 
   @media screen and (max-width: 1400px) {
-    font-size: 70px;
+    font-size: 64px;
+    margin-bottom: 25px;
   }
 
   @media screen and (max-width: 1200px) {
-    font-size: 62px;
-    margin-bottom: 30px;
+    font-size: 60px;
+    margin-bottom: 20px;
   }
 
   @media screen and (max-width: 993px) {
     font-size: 52px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   @media screen and (max-width: 768px) {
@@ -293,6 +294,10 @@ h6 {
       bottom: 0;
       background: linear-gradient(180deg, rgba(0, 99, 171, 0) 0%, rgba(0, 99, 171, 0.42) 100%);
     }
+  }
+
+  .btn-group {
+    padding-top: 10px;
   }
 
   .content-full {

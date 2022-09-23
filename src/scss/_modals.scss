@@ -369,6 +369,26 @@
       margin-bottom: 0;
     }
   }
+
+  .memberOverview {
+    &__phones {
+      display: flex;
+      flex-direction: column;
+      row-gap: 8px;
+
+      &-item {
+        display: flex;
+        align-items: center;
+        column-gap: 7px;
+
+        img {
+          width: 25px;
+          height: 25px;
+          object-fit: contain;
+        }
+      }
+    }
+  }
 }
 
 #searchFilters {

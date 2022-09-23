@@ -19,23 +19,36 @@ block content
 
       button.btn(type="button", data-target="#contactMe").modal-open Apply Now
 
-  section.cards.cards_col-3.cards_invert 
+  section.cards.cards_col-3.cards_invert.cards_animated 
     .container 
       h3.title We offer 3 different hiring scenarios which can be customized
 
       .cards__wrapper 
-        .cards__item
-          img.img(src="img/icon14.svg", alt="Icon")
-          h6.title Contract to Hire
 
         .cards__item
-          img.img(src="img/icon15.svg", alt="Icon")
-          h6.title Short and long term contracts
-
+          .cards__item-inner
+            .cards__item-front
+              img.img(src="img/icon14.svg", alt="Icon")
+              h6.title Contract to Hire
+            .cards__item-back  
+              .desc: p  Neque, aenean non dui sem hac massa lorem fermentum arcu. Nec eget consectetur sed fames lacus, vitae. Sed phasellus.
+        
         .cards__item
-          img.img(src="img/icon16.svg", alt="Icon")
-          h6.title Permanent Placement
-
+          .cards__item-inner
+            .cards__item-front
+              img.img(src="img/icon15.svg", alt="Icon")
+              h6.title Short and long term contracts
+            .cards__item-back  
+              .desc: p  Vestibulum magna justo ultricies mauris. Quis netus gravida habitasse quam tristique massa hac. Nulla et velit ipsum eget magna tincidunt.
+        
+        .cards__item
+          .cards__item-inner
+            .cards__item-front
+              img.img(src="img/icon16.svg", alt="Icon")
+              h6.title Permanent Placement
+            .cards__item-back  
+              .desc: p  Purus urna sollicitudin massa condimentum luctus nulla. Sapien volutpat dui sit etiam nam est viverra enim. Enim placerat. 
+              
 
   section.def-blue 
     .container 

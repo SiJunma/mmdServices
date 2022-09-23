@@ -71,6 +71,21 @@
         <div class="container"> 
           <div class="content"> 
             <h2 class="title">Search Available Jobs</h2>
+          </div>
+          <div class="filters-bar"> 
+            <button class="btn btn-filters modal-open" type="button" data-target="#searchFilters">Filters</button>
+            <div class="filters-bar__select">Sort by:
+              <div class="dropdown">
+                <div class="select"><span>Newest first</span></div>
+                <input type="hidden" name="Sorting">
+                <ul class="dropdown-menu">
+                  <li id="newest">Newest first</li>
+                  <li id="oldest">Oldest first</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="content">      
             <form class="find-search__form" action="">
               <input id="jobTitle" required type="text" name="jobTitle" placeholder="Job title or keyword">
               <input id="jobZip" required type="text" name="jobZip" placeholder="Location or Zip Code"><a class="btn" href="search-jobs.html?filters:title=text&amp;location=text">Search Jobs</a>
@@ -84,8 +99,8 @@
           <div class="cards__wrapper"> <a class="cards__item" href="category-jobs.html"><img class="img" src="img/icon13.svg" alt="Icon">
               <h6 class="title">Remote Positions</h6></a><a class="cards__item" href="category-jobs.html"><img class="img" src="img/icon8.svg" alt="Icon">
               <h6 class="title">Enterprise Applications</h6></a><a class="cards__item" href="category-jobs.html"><img class="img" src="img/icon9.svg" alt="Icon">
-              <h6 class="title">Leadership</h6></a><a class="cards__item" href="category-jobs.html"><img class="img" src="img/icon10.svg" alt="Icon">
-              <h6 class="title">Open Source</h6></a><a class="cards__item" href="category-jobs.html"><img class="img" src="img/icon11.svg" alt="Icon">
+              <h6 class="title">Leadership</h6></a><a class="cards__item" href="category-jobs.html"><img class="img" src="img/icon17.svg" alt="Icon">
+              <h6 class="title">Join Our Team</h6></a><a class="cards__item" href="category-jobs.html"><img class="img" src="img/icon11.svg" alt="Icon">
               <h6 class="title">Support / Network / Systems / Voice</h6></a><a class="cards__item" href="category-jobs.html"><img class="img" src="img/icon12.svg" alt="Icon">
               <h6 class="title">Technical Sales</h6></a></div>
         </div>
@@ -94,7 +109,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__wrapper">
-          <div class="footer__item d-none d-lg-block">
+          <div class="footer__item">
             <h6 class="title"> <img src="img/icon5.svg" alt="Recently Added Jobs"><span>Recently Added Jobs</span></h6>
             <ul> 
               <li><a href="#">Infrastructure Architect (Azure) </a></li>
@@ -102,9 +117,9 @@
               <li><a href="#">Customer Success Manager</a></li>
             </ul>
           </div>
-          <div class="footer__item d-none d-lg-block"> 
+          <div class="footer__item"> 
             <h6 class="title"> <img src="img/icon6.svg" alt="Recently Added Jobs"><span>Join Our Team</span></h6>
-            <p><b>Pretium id nunc consectetur tempor non. Et maecenas ipsum scelerisque tristique sed enim senectus nisl, et. Nec ridiculus arcu sit a et tristique duis.</b></p>
+            <p><b>Pretium id nunc consectetur tempor non. Et maecenas ipsum scelerisque tristique sed enim senectus nisl, et. Nec ridiculus arcu sit a et tristique duis.</b></p><a class="btn" href="category-jobs.html"> Look at Jobs</a>
           </div>
           <div class="footer__item"> 
             <h6 class="title"> <img src="img/icon7.svg" alt="Recently Added Jobs"><span>Get in touch</span></h6>
@@ -214,6 +229,10 @@
                 <li><a href="mailto:some-mail@.gmail.com" aria-label="MailTo" target="_blank"><img src="img/icon-mail.svg" alt="mail">MailTo</a></li>
                 <li><a href="https://www.linkedin.com/in/athomas4" aria-label="LinkedIn" target="_blank"><img src="img/icon-in.svg" alt="Linkedin">Linkedin</a></li>
               </ul>
+              <div class="memberOverview__phones">
+                <div class="memberOverview__phones-item"><img src="img/icon-tel.svg" alt="Phones">+(847) 322-1326</div>
+                <div class="memberOverview__phones-item"><img src="img/icon-tel.svg" alt="Phones">EXT +(847) 322-1326</div>
+              </div>
             </div>
           </div>
         </div>

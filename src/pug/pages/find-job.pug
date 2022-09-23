@@ -28,10 +28,26 @@ block content
     .container 
       .content 
         h2.title Search Available Jobs
+
+      .filters-bar 
+        button(type="button" data-target="#searchFilters").btn.btn-filters.modal-open Filters
+
+        .filters-bar__select
+          | Sort by:
+          .dropdown
+            .select
+              span Newest first
+            input(type='hidden' name='Sorting')
+            ul.dropdown-menu
+              li#newest Newest first
+              li#oldest Oldest first
+              
+      .content       
         form.find-search__form(action="")
           input#jobTitle(required type="text", name="jobTitle", placeholder="Job title or keyword") 
           input#jobZip(required type="text", name="jobZip", placeholder="Location or Zip Code")
           a.btn(href="search-jobs.html?filters:title=text&location=text") Search Jobs
+
 
   section.cards.cards_col-3 
     .container 
@@ -52,8 +68,8 @@ block content
           h6.title Leadership
 
         a(href="category-jobs.html").cards__item
-          img.img(src="img/icon10.svg", alt="Icon")
-          h6.title Open Source
+          img.img(src="img/icon17.svg", alt="Icon")
+          h6.title Join Our Team
 
         a(href="category-jobs.html").cards__item
           img.img(src="img/icon11.svg", alt="Icon")

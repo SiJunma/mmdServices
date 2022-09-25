@@ -1332,9 +1332,19 @@ h6 {
   }
 
   .filters-bar {
+    margin-top: 45px;
     margin-bottom: 45px;
     padding-bottom: 35px;
     border-bottom: 1px solid #0869ca;
+
+    @media screen and (max-width: 576px) {
+      margin-bottom: 35px;
+      margin-top: 35px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 

@@ -631,12 +631,8 @@ h6 {
           display: block;
           text-align: center;
           font-weight: 600;
-          border: 2px solid #004181;
+          border: 2px solid #0059b1;
           transition: background-color 0.3s ease;
-  
-          @media screen and (max-width: 768px) {
-            border-color: #0059B1;
-          }
   
           &:hover {
             background-color: #fff;
@@ -1760,6 +1756,10 @@ h6 {
       flex-direction: column;
       align-items: center;
       text-align: center;
+    }
+
+    p > *:first-child {
+      margin-top: 0;
     }
   }
 

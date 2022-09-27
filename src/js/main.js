@@ -84,6 +84,7 @@ $( document ).ready(function() {
   }
   fileInputInit('.input-file-actual');
   
+  // Header Slider
   if($('.header .splide').length) {
     new Splide( '.header .splide', {
       type: 'loop',
@@ -102,8 +103,6 @@ $( document ).ready(function() {
     }).mount();
   }
 
-
-
   /*Dropdown Menu*/
   $('.dropdown').click(function () {
     $(this).attr('tabindex', 1).focus();
@@ -119,6 +118,43 @@ $( document ).ready(function() {
     $(this).parents('.dropdown').find('input').attr('value', $(this).attr('id'));
   });
   /*End Dropdown Menu*/
+
+
+  /*Submit scenario*/
+  function submitWindow(modalId) {
+    $(modalId).find('.apply-form').hide();
+    $(modalId).find('.modal-header').hide();
+
+    let success = true; /*scenario for checking form*/
+
+    if(success) {
+      $(modalId).find('.modal-body').append('<div id="submitResponse"><p>Form has been submitted successfully!</p><button class="btn submit-close" type="button">Close</button></div>');
+    } else {
+      $(modalId).find('.modal-body').append('<div id="submitResponse"><p>Something went wrong. Try again later.</p><button class="btn submit-close" type="button">Close</button></div>');
+    };
+
+    submitClose('.submit-close');
+  };
+
+  function submitClose(btn) {
+    $(btn).on('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+
+      let targetModal = $( this ).closest('.modal');
+      targetModal.hide();
+      targetModal.find('.input-form').val('');
+      targetModal.find('.input-file-box').text('No file chosen');
+      $('body').css('overflow', '');
+
+      $( this ).closest('.modal-body').find('.apply-form').show();
+      $( this ).closest('.modal-body').find('.modal-header').show();
+      console.log($( this ).closest('.modal-body').find('#submitResponse'));
+      $( this ).closest('.modal-body').find('#submitResponse').remove();
+    })
+  };
+  
+  /*End Submit scenario*/
 
 });
 

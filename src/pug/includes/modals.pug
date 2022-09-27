@@ -26,34 +26,34 @@
       .apply-form
         form(action="")
           .form_input
-            input.input-form#applyerName(required, type="text", name="Applyer Name", placeholder="Name") 
+            input.input-form#resumeApply_applyerName(required, type="text", name="Applyer Name", placeholder="Name") 
 
           .btn-group
             .form_input
-              input.input-form#applyerMail(required, type="text", name="Applyer Mail", placeholder="E-mail")
+              input.input-form#resumeApply_applyerMail(required, type="text", name="Applyer Mail", placeholder="E-mail")
             
             .form_input
-              input.input-form#applyerPhone(required, type="tel", name="Applyer Phone", placeholder="Phone number")
+              input.input-form#resumeApply_applyerPhone(required, type="tel", name="Applyer Phone", placeholder="Phone number")
 
           .btn-file
-            label(for='applyerResume').btn.input-file-btn Upload Resume
+            label(for='resumeApply_applyerResume').btn.input-file-btn Upload Resume
             div.btn-file__siblings
               span.input-file-box No file chosen
-              input.input-form.input-file-actual#applyerResume(required, hidden, type="file", name="Applyer Resume") 
+              input.input-form.input-file-actual#resumeApply_applyerResume(required, hidden, type="file", name="Applyer Resume") 
           
           .form_input
-            textarea.input-textarea#applyerMsg(name="Applyer Letter", placeholder="Accompanying letter")
+            textarea.input-textarea#resumeApply_applyerMsg(name="Applyer Letter", placeholder="Accompanying letter")
 
           .form_input
-            input.input-form#jobTitle(required, type="text", name="Job Title", placeholder="Job Title you are applying for") 
+            input.input-form#resumeApply_jobTitle(required, type="text", name="Job Title", placeholder="Job Title you are applying for") 
 
           .form_input
-            textarea.input-textarea#applyerLinks(name="Applyer links", placeholder="Links to LinkedIn, GitHub, etc.")
+            textarea.input-textarea#resumeApply_applyerLinks(name="Applyer links", placeholder="Links to LinkedIn, GitHub, etc.")
 
           .form_input
-            input.input-form#applyerReff(type="text", name="Refferal", placeholder="Were you reffered by someone?") 
+            input.input-form#resumeApply_applyerReff(type="text", name="Refferal", placeholder="Were you reffered by someone?") 
 
-          button.btn(href="#", type="submit") Submit
+          button.btn(type="submit") Submit
           
 .modal#contactMe
   // Modal content
@@ -71,16 +71,16 @@
       .apply-form
         form(action="")
           .form_input
-            input.input-form#applyerName2(required, type="text", name="Applyer Name", placeholder="Name") 
+            input.input-form#contactMe_applyerName(required, type="text", name="Applyer Name", placeholder="Name") 
 
           .btn-group
             .form_input
-              input.input-form#applyerMail2(required, type="text", name="Applyer Mail", placeholder="E-mail")
+              input.input-form#contactMe_applyerMail(required, type="text", name="Applyer Mail", placeholder="E-mail")
             .form_input
-              input.input-form#applyerPhone2(required, type="tel", name="Applyer Phone", placeholder="Phone number")
+              input.input-form#contactMe_applyerPhone(required, type="tel", name="Applyer Phone", placeholder="Phone number")
           
           .form_input
-            textarea.input-textarea#applyerMsg2(name="Applyer Letter", placeholder="Message")
+            textarea.input-textarea#contactMe_applyerMsg(name="Applyer Letter", placeholder="Message")
 
           .btn-group
             label.checkbox
@@ -204,30 +204,31 @@
       .apply-form
         form(action="")
           .form_input
-            input.input-form#applyerName(required, type="text", name="Applyer Name", placeholder="Name") 
+            input.input-form#jobApply_applyerName(required, type="text", name="Applyer Name", placeholder="Name") 
 
           .btn-group
             .form_input
-              input.input-form#applyerMail(required, type="text", name="Applyer Mail", placeholder="E-mail")
+              input.input-form#jobApply_applyerMail(required, type="text", name="Applyer Mail", placeholder="E-mail")
             .form_input
-              input.input-form#applyerPhone(required, type="tel", name="Applyer Phone", placeholder="Phone number")
+              input.input-form#jobApply_applyerPhone(required, type="tel", name="Applyer Phone", placeholder="Phone number")
 
           .btn-file
-            label(for='applyerResume').btn.input-file-btn Upload Resume
+            label(for='jobApply_applyerResume').btn.input-file-btn Upload Resume
             div.btn-file__siblings
               span.input-file-box No file chosen
-              input.input-form.input-file-actual#applyerResume(required, hidden, type="file", name="Applyer Resume") 
+              input.input-form.input-file-actual#jobApply_applyerResume(required, hidden type="file", name="Applyer Resume") 
         
           .form_input
-            textarea.input-textarea#applyerMsg(name="Applyer Letter", placeholder="Accompanying letter")
+            textarea.input-textarea#jobApply_applyerMsg(name="Applyer Letter", placeholder="Accompanying letter")
 
           .form_input
-            input.input-form#jobTitle(required, hidden  type="text", name="Job Title", value="link on job page!!!!!") 
+            input.input-form#jobApply_jobTitle(required, hidden  type="text", name="Job Title", value="link on job page!!!!!") 
 
           .form_input
-            textarea.input-textarea#applyerLinks(name="Applyer links", placeholder="Links to LinkedIn, GitHub, etc.")
+            textarea.input-textarea#jobApply_applyerLinks(name="Applyer links", placeholder="Links to LinkedIn, GitHub, etc.")
 
           .form_input
-            input.input-form#applyerReff(type="text", name="Refferal", placeholder="Were you reffered by someone?") 
+            input.input-form#jobApply_applyerReff(type="text", name="Refferal", placeholder="Were you reffered by someone?") 
 
-          button.btn(href="#", type="submit") Submit
+          button.btn(type="submit") Submit
+          

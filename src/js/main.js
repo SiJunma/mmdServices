@@ -125,16 +125,24 @@ $( document ).ready(function() {
     $(modalId).find('.apply-form').hide();
     $(modalId).find('.modal-header').hide();
 
-    let success = true; /*scenario for checking form*/
+    let stage = 'SUCCESS'; /*scenario for checking form*/
 
-    if(success) {
-      $(modalId).find('.modal-body').append('<div id="submitResponse"><p>Form has been submitted successfully!</p><button class="btn submit-close" type="button">Close</button></div>');
-    } else {
-      $(modalId).find('.modal-body').append('<div id="submitResponse"><p>Something went wrong. Try again later.</p><button class="btn submit-close" type="button">Close</button></div>');
+    $(modalId).find('.modal-body').append('<div id="submitResponse"></div>')
+
+    if(stage == 'PROCESS') {
+      $(modalId).find('#submitResponse').html('<img class="spinner" src="img/spinner-icon-0.webp" alt="Loading">')
+    }; 
+    if(stage == 'SUCCESS') {
+      $(modalId).find('#submitResponse').html('<p>Form has been submitted successfully!</p><button class="btn submit-close" type="button">Close</button>');
+    }; 
+    if (stage == 'FAILED') {
+      $(modalId).find('#submitResponse').html('<p>Something went wrong. Try again later.</p><button class="btn submit-close" type="button">Close</button>');
     };
 
     submitClose('.submit-close');
   };
+
+  submitWindow("#jobApply")
 
   function submitClose(btn) {
     $(btn).on('click', function(e) {
@@ -148,10 +156,9 @@ $( document ).ready(function() {
       $('body').css('overflow', '');
 
       $( this ).closest('.modal-body').find('.apply-form').show();
-      $( this ).closest('.modal-body').find('.modal-header').show();
-      console.log($( this ).closest('.modal-body').find('#submitResponse'));
+      $( this ).closest('.modal-content').find('.modal-header').show();
       $( this ).closest('.modal-body').find('#submitResponse').remove();
-    })
+    });
   };
   
   /*End Submit scenario*/

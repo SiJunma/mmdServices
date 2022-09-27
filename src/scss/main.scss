@@ -2377,4 +2377,10 @@ h6 {
   flex-direction: column;
   align-items: center;
   margin-top: 30px;
+
+  .spinner {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+  }
 }

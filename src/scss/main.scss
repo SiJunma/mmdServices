@@ -1236,6 +1236,10 @@ h6 {
       font-weight: 500;
     }
 
+    a[href] {
+      color: inherit;
+    }
+
     &>*:last-child {
       margin-bottom: 0;
     }
@@ -1726,6 +1730,10 @@ h6 {
       font-weight: 500;
     }
 
+    a[href] {
+      color: inherit;
+    }
+
     &>*:last-child {
       margin-bottom: 0;
     }
@@ -1771,6 +1779,10 @@ h6 {
       text-align: center;
     }
 
+    a[href] {
+      color: inherit;
+    }
+
     & > *:last-child {
       margin-bottom: 0;
     }
@@ -1814,6 +1826,10 @@ h6 {
 
     b {
       font-weight: 500;
+    }
+
+    a[href] {
+      color: inherit;
     }
 
     &>*:last-child {
@@ -1883,10 +1899,20 @@ h6 {
 }
 
 .apply-form {
-  display: flex;
-  flex-direction: column;
-  row-gap: 20px;
-  align-items: center;
+  form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+
+    & > div {
+      width: 100%;
+    }
+
+    span, p {
+      margin: 0!important;
+    }
+  }
 
   .btn-group {
     width: 100%;
@@ -1899,11 +1925,16 @@ h6 {
 
       @media screen and (max-width: 576px) {
         flex-basis: unset;
+        width: 100%;
       }
     }
 
     @media screen and (max-width: 576px) {
       flex-direction: column;
+    }
+
+    .btn {
+      flex-shrink: 0;
     }
   }
 
@@ -2011,6 +2042,10 @@ h6 {
     font-weight: 600;
   }
 
+  a[href] {
+    color: inherit;
+  }
+
   a[download] {
     display: flex;
     column-gap: 14px;
@@ -2042,6 +2077,7 @@ h6 {
   font-size: 18px;
   justify-content: center;
   align-items: center;
+  color: #fff;
 
   .prev, .next {
     font-size: 0;
@@ -2064,6 +2100,11 @@ h6 {
 
   .next {
     background-image: url("data:image/svg+xml,%3Csvg width='16' height='17' viewBox='0 0 16 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.5 8.11585L0.755711 16.6881L0.755712 0.229369L15.5 8.11585Z' fill='white'/%3E%3C/svg%3E%0A");
+  }
+
+  a[href] {
+    color: inherit;
+    text-decoration: none;
   }
 }
 

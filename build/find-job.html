@@ -46,7 +46,7 @@
       </div>
     </nav>
     <header class="header">
-      <div class="bg"><img src="img/header-img2.jpg"></div>
+      <div class="bg bg-overlay"><img src="img/header-img2.jpg"></div>
       <div class="container"> 
         <div class="content-full">
           <h1 class="title">Find a Job</h1>
@@ -159,24 +159,40 @@
           <button class="btn-close" aria-label="Close modal" type="button"></button>
         </div>
         <div class="modal-body">
-          <form class="apply-form" action="">
-            <input class="input-form" id="applyerName" required type="text" name="Applyer Name" placeholder="Name">
-            <div class="btn-group">
-              <input class="input-form" id="applyerMail" required type="text" name="Applyer Mail" placeholder="E-mail">
-              <input class="input-form" id="applyerPhone" required type="tel" name="Applyer Phone" placeholder="Phone number">
-            </div>
-            <div class="btn-file">
-              <label class="btn input-file-btn" for="applyerResume">Upload Resume</label>
-              <div class="btn-file__siblings"><span class="input-file-box">No file chosen</span>
-                <input class="input-form input-file-actual" id="applyerResume" required hidden type="file" name="Applyer Resume">
+          <div class="apply-form">
+            <form action="">
+              <div class="form_input">
+                <input class="input-form" id="applyerName" required type="text" name="Applyer Name" placeholder="Name">
               </div>
-            </div>
-            <textarea class="input-textarea" id="applyerMsg" name="Applyer Letter" placeholder="Accompanying letter"></textarea>
-            <input class="input-form" id="jobTitle" required type="text" name="Job Title" placeholder="Job Title you are applying for">
-            <textarea class="input-textarea" id="applyerLinks" name="Applyer links" placeholder="Links to LinkedIn, GitHub, etc."></textarea>
-            <input class="input-form" id="applyerReff" type="text" name="Refferal" placeholder="Were you reffered by someone?">
-            <button class="btn" href="#" type="submit">Submit</button>
-          </form>
+              <div class="btn-group">
+                <div class="form_input">
+                  <input class="input-form" id="applyerMail" required type="text" name="Applyer Mail" placeholder="E-mail">
+                </div>
+                <div class="form_input">
+                  <input class="input-form" id="applyerPhone" required type="tel" name="Applyer Phone" placeholder="Phone number">
+                </div>
+              </div>
+              <div class="btn-file">
+                <label class="btn input-file-btn" for="applyerResume">Upload Resume</label>
+                <div class="btn-file__siblings"><span class="input-file-box">No file chosen</span>
+                  <input class="input-form input-file-actual" id="applyerResume" required hidden type="file" name="Applyer Resume">
+                </div>
+              </div>
+              <div class="form_input">
+                <textarea class="input-textarea" id="applyerMsg" name="Applyer Letter" placeholder="Accompanying letter"></textarea>
+              </div>
+              <div class="form_input">
+                <input class="input-form" id="jobTitle" required type="text" name="Job Title" placeholder="Job Title you are applying for">
+              </div>
+              <div class="form_input">
+                <textarea class="input-textarea" id="applyerLinks" name="Applyer links" placeholder="Links to LinkedIn, GitHub, etc."></textarea>
+              </div>
+              <div class="form_input">
+                <input class="input-form" id="applyerReff" type="text" name="Refferal" placeholder="Were you reffered by someone?">
+              </div>
+              <button class="btn" href="#" type="submit">Submit</button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
@@ -192,20 +208,30 @@
           <button class="btn-close" aria-label="Close modal" type="button"></button>
         </div>
         <div class="modal-body">
-          <form class="apply-form" action="">
-            <input class="input-form" id="applyerName2" required type="text" name="Applyer Name" placeholder="Name">
-            <div class="btn-group">
-              <input class="input-form" id="applyerMail2" required type="text" name="Applyer Mail" placeholder="E-mail">
-              <input class="input-form" id="applyerPhone2" required type="tel" name="Applyer Phone" placeholder="Phone number">
-            </div>
-            <textarea class="input-textarea" id="applyerMsg2" name="Applyer Letter" placeholder="Message"></textarea>
-            <div class="btn-group">
-              <label class="checkbox">Subscribe to MMD newsletter
-                <input type="checkbox" checked="checked"><span class="checkmark"></span>
-              </label>
-              <button class="btn" href="#" type="submit">Submit</button>
-            </div>
-          </form>
+          <div class="apply-form">
+            <form action="">
+              <div class="form_input">
+                <input class="input-form" id="applyerName2" required type="text" name="Applyer Name" placeholder="Name">
+              </div>
+              <div class="btn-group">
+                <div class="form_input">
+                  <input class="input-form" id="applyerMail2" required type="text" name="Applyer Mail" placeholder="E-mail">
+                </div>
+                <div class="form_input">
+                  <input class="input-form" id="applyerPhone2" required type="tel" name="Applyer Phone" placeholder="Phone number">
+                </div>
+              </div>
+              <div class="form_input">
+                <textarea class="input-textarea" id="applyerMsg2" name="Applyer Letter" placeholder="Message"></textarea>
+              </div>
+              <div class="btn-group">
+                <label class="checkbox">Subscribe to MMD newsletter
+                  <input type="checkbox" checked="checked"><span class="checkmark"></span>
+                </label>
+                <button class="btn" href="#" type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
@@ -291,24 +317,40 @@
           <button class="btn-close" aria-label="Close modal" type="button"></button>
         </div>
         <div class="modal-body">
-          <form class="apply-form" action="">
-            <input class="input-form" id="applyerName" required type="text" name="Applyer Name" placeholder="Name">
-            <div class="btn-group">
-              <input class="input-form" id="applyerMail" required type="text" name="Applyer Mail" placeholder="E-mail">
-              <input class="input-form" id="applyerPhone" required type="tel" name="Applyer Phone" placeholder="Phone number">
-            </div>
-            <div class="btn-file">
-              <label class="btn input-file-btn" for="applyerResume">Upload Resume</label>
-              <div class="btn-file__siblings"><span class="input-file-box">No file chosen</span>
-                <input class="input-form input-file-actual" id="applyerResume" required hidden type="file" name="Applyer Resume">
+          <div class="apply-form">
+            <form action="">
+              <div class="form_input">
+                <input class="input-form" id="applyerName" required type="text" name="Applyer Name" placeholder="Name">
               </div>
-            </div>
-            <textarea class="input-textarea" id="applyerMsg" name="Applyer Letter" placeholder="Accompanying letter"></textarea>
-            <input class="input-form" id="jobTitle" required hidden type="text" name="Job Title" value="link on job page!!!!!">
-            <textarea class="input-textarea" id="applyerLinks" name="Applyer links" placeholder="Links to LinkedIn, GitHub, etc."></textarea>
-            <input class="input-form" id="applyerReff" type="text" name="Refferal" placeholder="Were you reffered by someone?">
-            <button class="btn" href="#" type="submit">Submit</button>
-          </form>
+              <div class="btn-group">
+                <div class="form_input">
+                  <input class="input-form" id="applyerMail" required type="text" name="Applyer Mail" placeholder="E-mail">
+                </div>
+                <div class="form_input">
+                  <input class="input-form" id="applyerPhone" required type="tel" name="Applyer Phone" placeholder="Phone number">
+                </div>
+              </div>
+              <div class="btn-file">
+                <label class="btn input-file-btn" for="applyerResume">Upload Resume</label>
+                <div class="btn-file__siblings"><span class="input-file-box">No file chosen</span>
+                  <input class="input-form input-file-actual" id="applyerResume" required hidden type="file" name="Applyer Resume">
+                </div>
+              </div>
+              <div class="form_input">
+                <textarea class="input-textarea" id="applyerMsg" name="Applyer Letter" placeholder="Accompanying letter"></textarea>
+              </div>
+              <div class="form_input">
+                <input class="input-form" id="jobTitle" required hidden type="text" name="Job Title" value="link on job page!!!!!">
+              </div>
+              <div class="form_input">
+                <textarea class="input-textarea" id="applyerLinks" name="Applyer links" placeholder="Links to LinkedIn, GitHub, etc."></textarea>
+              </div>
+              <div class="form_input">
+                <input class="input-form" id="applyerReff" type="text" name="Refferal" placeholder="Were you reffered by someone?">
+              </div>
+              <button class="btn" href="#" type="submit">Submit</button>
+            </form>
+          </div>
         </div>
       </div>
     </div>

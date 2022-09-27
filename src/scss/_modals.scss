@@ -63,19 +63,19 @@
     // For Chrome & Safari
     &::-webkit-scrollbar {
       width: 6px;
-      background-color: #E9E9E9;
+      background-color: #004E9B;
     }
   
     &::-webkit-scrollbar-thumb {
-      background: #D2D2D2;
+      background: #0066CA;
     }
   
     &::-webkit-scrollbar-track {
-      background: #E9E9E9;
+      background: #004E9B;
     }
   
     // Standard version (Firefox only for now)
-    scrollbar-color: #D2D2D2 #E9E9E9;
+    scrollbar-color: #0066CA #004E9B;
     scrollbar-width: thin;
 
     @media screen and (max-width: 576px) {

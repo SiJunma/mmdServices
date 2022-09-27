@@ -142,8 +142,6 @@ $( document ).ready(function() {
     submitClose('.submit-close');
   };
 
-  submitWindow("#jobApply")
-
   function submitClose(btn) {
     $(btn).on('click', function(e) {
       e.preventDefault();

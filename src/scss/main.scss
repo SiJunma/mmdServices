@@ -1942,6 +1942,10 @@ h6 {
     width: 100%;
     justify-content: space-between;
 
+    .input-file-btn {
+      flex-shrink: 0;
+    }
+
     @media screen and (max-width: 576px) {
       flex-direction: column;
       row-gap: 10px;

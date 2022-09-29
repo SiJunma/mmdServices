@@ -78,7 +78,7 @@ $( document ).ready(function() {
     $(btn).change(function(e) {
       if(e.target.files[0]) {
         let fileName = e.target.files[0].name;
-        $(this).siblings('.input-file-box').text(fileName);
+        $(this).closest('.btn-file__siblings').find('.input-file-box').text(fileName);
       }
     });
   }

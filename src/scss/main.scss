@@ -804,6 +804,69 @@ h6 {
     & > *:last-child {
       margin-bottom: 0;
     }
+
+    .cards__item-back {
+      display: none;
+    }
+
+    &-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+
+      & *:last-child {
+        margin-bottom: 0;
+      }
+
+      &:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    }
+
+    &-front,
+    &-back {
+      height: 100%;
+      -webkit-backface-visibility: hidden; /* Safari */
+      backface-visibility: hidden;
+      background-color: #3a89ff;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      width: 100%; /* be as wide as parent */
+      margin-right: -100%; /* take up no width */
+
+      padding: 30px 20px 30px;
+      min-height: 210px;
+
+      @media screen and (max-width: 768px) {
+        margin-right: unset;
+        height: unset;
+        padding: 0;
+        min-height: unset;
+      }
+    }
+
+    &-front {
+      float: left; /* display side-by-side */
+
+      @media screen and (max-width: 768px) {
+        float: unset;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .cards__item-back {
+        margin-top: 10px;
+      }
+    }
   }
 
   a.cards__item {
@@ -874,29 +937,10 @@ h6 {
       @media screen and (max-width: 768px) {
         padding: 30px 20px 30px;
         background-color: #3a89ff;
-
-        .cards__item-back {
-          margin-top: 10px;
-        }
       }
 
-      &-inner {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        transition: transform 0.8s;
-        transform-style: preserve-3d;
-
-        & *:last-child {
-          margin-bottom: 0;
-        }
-
-        &:after {
-          content: "";
-          display: table;
-          clear: both;
-        }
+      .cards__item-back {
+        display: flex;
       }
 
       &:hover .cards__item-inner {
@@ -904,40 +948,6 @@ h6 {
 
         @media screen and (max-width: 768px) {
           transform: unset;
-        }
-      }
-
-      &-front,
-      &-back {
-        height: 100%;
-        -webkit-backface-visibility: hidden; /* Safari */
-        backface-visibility: hidden;
-        background-color: #3a89ff;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        width: 100%; /* be as wide as parent */
-        margin-right: -100%; /* take up no width */
-
-        padding: 30px 20px 30px;
-        min-height: 210px;
-
-        @media screen and (max-width: 768px) {
-          margin-right: unset;
-          height: unset;
-          padding: 0;
-          min-height: unset;
-        }
-      }
-
-      &-front {
-        float: left; /* display side-by-side */
-
-        @media screen and (max-width: 768px) {
-          float: unset;
         }
       }
 

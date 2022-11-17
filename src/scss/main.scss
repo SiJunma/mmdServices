@@ -1193,6 +1193,175 @@ h6 {
   }
 }
 
+.home-copy {
+  padding: $sectionPaddingDesk;
+  box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.52);
+
+  @media screen and (max-width: 1400px) {
+    padding: $sectionPaddingDesk2;
+  }
+
+  @media screen and (max-width: 1200px) {
+    padding: $sectionPaddingDesk3;
+    padding-bottom: 70px;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: $sectionPaddingDesk3;
+    box-shadow: none;
+  }
+
+  @media screen and (max-width: 576px) {
+    padding: $sectionPaddingDesk4;
+    padding-bottom: 50px;
+  }
+
+  .title {
+    margin: 0;
+    color: #004181;
+    line-height: 130%;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      row-gap: 30px;
+    }
+
+    img {
+      max-width: 185px;
+      width: 100%;
+      object-fit: contain;
+      margin: 0;
+    }
+  }
+}
+
+.home-semi {
+  padding: $sectionPaddingDesk;
+  background: linear-gradient(90deg, #004181 0%, #004181 50%, #FFFFFF 50%);
+
+  @media screen and (max-width: 1400px) {
+    padding: $sectionPaddingDesk2;
+  }
+
+  @media screen and (max-width: 1200px) {
+    padding: $sectionPaddingDesk3;
+    padding-bottom: 70px;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 0;
+    box-shadow: none;
+    background: #004181;
+  }
+
+  &__wrapper {
+    display: flex;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  &__col {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-weight: 300;
+    justify-content: center;
+
+    @media screen and (max-width: 1200px) {
+      font-size: 18px;
+    }
+
+    @media screen and (max-width: 993px) {
+      font-size: 16px;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding: $sectionPaddingDesk3;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    p:last-of-type {
+      margin-bottom: 0;
+    }
+
+    .btn {
+      margin-top: 20px;
+    }
+
+    .title {
+      margin-top: 0;
+    }
+
+    &.col-blue {
+      color: #fff;
+      padding-right: 5em;
+
+      @media screen and (max-width: 1200px) {
+        padding-right: 3em;
+      }
+
+      @media screen and (max-width: 993px) {
+        padding-right: 1em;
+      }
+
+      @media screen and (max-width: 768px) {
+        padding-right: 0;
+      }
+
+      .title {
+        color: #fff;
+      }
+    }
+
+    &.col-white {
+      padding-left: 5em;
+      position: relative;
+      z-index: 0;
+
+      @media screen and (max-width: 1200px) {
+        padding-left: 3em;
+      }
+
+      @media screen and (max-width: 993px) {
+        padding-left: 1em;
+      }
+
+      @media screen and (max-width: 768px) {
+        padding-left: 0;
+        
+        &::before {
+          content: '';
+          display: block;
+          position: absolute;
+          width: 100vw;
+          background: #fff;
+          height: 100%;
+          z-index: -1;
+        }
+      }
+
+      .title {
+        color: #004181;
+      }
+    }
+  }
+}
+
 .home-started {
   padding: $sectionPaddingDesk;
   background-color: #0059b1;

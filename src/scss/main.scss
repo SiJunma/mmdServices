@@ -585,21 +585,11 @@ h6 {
     padding: 0;
     margin: 0;
     list-style: none;
-    column-gap: 30px;
-    font-size: 16px;
-    font-weight: 700;
+    column-gap: 20px;
+    font-size: 14px;
+    font-weight: 600;
 
     @media screen and (max-width: 1400px) {
-      column-gap: 25px;
-      font-size: 14px;
-    }
-
-    @media screen and (max-width: 1200px) {
-      font-weight: 600;
-      column-gap: 20px;
-    }
-
-    @media screen and (max-width: 993px) {
       height: 0;
       width: 0;
 
@@ -622,9 +612,13 @@ h6 {
         background: #0059b1;
         right: 25px;
         width: 230px;
-        top: 51px;
+        top: 61px;
         align-items: stretch;
         box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.21);
+
+        @media screen and (max-width: 1200px) {
+          top: 51px;
+        }
 
         @media screen and (max-width: 768px) {
           background: #0059b1;
@@ -671,7 +665,7 @@ h6 {
     list-style: none;
     column-gap: 18px;
 
-    @media screen and (max-width: 993px) {
+    @media screen and (max-width: 1400px) {
       margin-left: auto;
       column-gap: 12px;
     }
@@ -1449,24 +1443,11 @@ h6 {
 }
 
 .find-search {
-  padding-top: 100px;
   background-color: #0059b1;
   color: #ffffff;
 
-  @media screen and (max-width: 1400px) {
-    padding-top: 80px;
-  }
-
-  @media screen and (max-width: 1200px) {
-    padding-top: 60px;
-  }
-
   @media screen and (max-width: 768px) {
     background-color: #0059b1;
-  }
-
-  @media screen and (max-width: 576px) {
-    padding-top: 40px;
   }
 
   .title {
@@ -2263,6 +2244,11 @@ h6 {
   .container > *:first-child {
     margin-top: 0;
   }
+
+  .container > *:last-child {
+    margin-bottom: 0;
+  }
+  
 }
 
 .pagination {

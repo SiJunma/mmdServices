@@ -1239,7 +1239,7 @@ h6 {
 
 .home-semi {
   padding: $sectionPaddingDesk;
-  background: linear-gradient(90deg, #004181 0%, #004181 50%, #FFFFFF 50%);
+  background: linear-gradient(90deg, #0059b1 0%, #0059b1 50%, #FFFFFF 50%);
 
   @media screen and (max-width: 1400px) {
     padding: $sectionPaddingDesk2;
@@ -1253,7 +1253,7 @@ h6 {
   @media screen and (max-width: 768px) {
     padding: 0;
     box-shadow: none;
-    background: #004181;
+    background: #0059b1;
   }
 
   &__wrapper {

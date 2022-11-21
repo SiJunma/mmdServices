@@ -298,11 +298,9 @@ h6 {
         position: absolute;
         left: 0;
         bottom: 0;
-        background: linear-gradient(
-          180deg,
-          rgba(0, 99, 171, 0) 0%,
-          rgba(0, 99, 171, 0.42) 100%
-        );
+        background: linear-gradient(180deg,
+            rgba(0, 99, 171, 0) 0%,
+            rgba(0, 99, 171, 0.42) 100%);
       }
     }
   }
@@ -343,11 +341,11 @@ h6 {
       color: #ffffff;
     }
 
-    & > *:last-child {
+    &>*:last-child {
       margin-bottom: 0;
     }
 
-    & > .btn {
+    &>.btn {
       margin-top: 20px;
 
       @media screen and (max-width: 768px) {
@@ -778,15 +776,17 @@ h6 {
         margin-bottom: 15px;
       }
     }
+
     .title {
       margin-top: 0;
       margin-bottom: 8px;
     }
+
     .desc {
       font-size: 16px;
       line-height: 120%;
 
-      & > *:last-child {
+      &>*:last-child {
         margin-bottom: 0;
       }
 
@@ -795,7 +795,7 @@ h6 {
       }
     }
 
-    & > *:last-child {
+    &>*:last-child {
       margin-bottom: 0;
     }
 
@@ -825,7 +825,8 @@ h6 {
     &-front,
     &-back {
       height: 100%;
-      -webkit-backface-visibility: hidden; /* Safari */
+      -webkit-backface-visibility: hidden;
+      /* Safari */
       backface-visibility: hidden;
       background-color: #3a89ff;
 
@@ -834,8 +835,10 @@ h6 {
       justify-content: center;
       align-items: center;
 
-      width: 100%; /* be as wide as parent */
-      margin-right: -100%; /* take up no width */
+      width: 100%;
+      /* be as wide as parent */
+      margin-right: -100%;
+      /* take up no width */
 
       padding: 30px 20px 30px;
       min-height: 210px;
@@ -849,7 +852,8 @@ h6 {
     }
 
     &-front {
-      float: left; /* display side-by-side */
+      float: left;
+      /* display side-by-side */
 
       @media screen and (max-width: 768px) {
         float: unset;
@@ -1056,7 +1060,7 @@ h6 {
       font-size: 16px;
       line-height: 120%;
 
-      & > *:last-child {
+      &>*:last-child {
         margin-bottom: 0;
       }
 
@@ -1173,7 +1177,7 @@ h6 {
       width: 100%;
     }
 
-    & > *:last-child {
+    &>*:last-child {
       margin-bottom: 0;
     }
 
@@ -1337,7 +1341,7 @@ h6 {
 
       @media screen and (max-width: 768px) {
         padding-left: 0;
-        
+
         &::before {
           content: '';
           display: block;
@@ -1424,7 +1428,7 @@ h6 {
       color: inherit;
     }
 
-    & > *:last-child {
+    &>*:last-child {
       margin-bottom: 0;
     }
 
@@ -1445,9 +1449,18 @@ h6 {
 .find-search {
   background-color: #0059b1;
   color: #ffffff;
+  padding-top: 100px;
 
   @media screen and (max-width: 768px) {
     background-color: #0059b1;
+  }
+
+  @media screen and (max-width: 1400px) {
+    padding-top: 80px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    padding-top: 60px;
   }
 
   .title {
@@ -1737,7 +1750,7 @@ h6 {
       text-align: left;
     }
 
-    & > *:last-child {
+    &>*:last-child {
       margin-bottom: 0;
     }
   }
@@ -1861,7 +1874,7 @@ h6 {
     }
 
     img,
-    & > * {
+    &>* {
       width: 100%;
       height: 100%;
       min-height: 300px;
@@ -1906,7 +1919,7 @@ h6 {
       color: inherit;
     }
 
-    & > *:last-child {
+    &>*:last-child {
       margin-bottom: 0;
     }
   }
@@ -1938,7 +1951,7 @@ h6 {
       text-align: center;
     }
 
-    p > *:first-child {
+    p>*:first-child {
       margin-top: 0;
     }
   }
@@ -1955,7 +1968,7 @@ h6 {
       color: inherit;
     }
 
-    & > *:last-child {
+    &>*:last-child {
       margin-bottom: 0;
     }
   }
@@ -2004,7 +2017,7 @@ h6 {
       color: inherit;
     }
 
-    & > *:last-child {
+    &>*:last-child {
       margin-bottom: 0;
     }
   }
@@ -2027,11 +2040,11 @@ h6 {
     height: 0;
     width: 0;
 
-    &:checked ~ .checkmark {
+    &:checked~.checkmark {
       background-color: #2196f3;
     }
 
-    &:checked ~ .checkmark:after {
+    &:checked~.checkmark:after {
       display: block;
     }
   }
@@ -2077,7 +2090,7 @@ h6 {
     row-gap: 20px;
     align-items: center;
 
-    & > div {
+    &>div {
       width: 100%;
     }
 
@@ -2092,7 +2105,7 @@ h6 {
     gap: 20px;
     flex-wrap: wrap;
 
-    & > * {
+    &>* {
       flex-basis: 45%;
       flex-grow: 1;
 
@@ -2123,7 +2136,7 @@ h6 {
       flex-direction: column;
       row-gap: 10px;
 
-      & > * {
+      &>* {
         width: 100%;
         text-align: center;
       }
@@ -2187,7 +2200,7 @@ h6 {
     margin-bottom: 15px;
   }
 
-  .container > *:first-child {
+  .container>*:first-child {
     margin-top: 0;
   }
 }
@@ -2241,14 +2254,18 @@ h6 {
     margin-top: 40px;
   }
 
-  .container > *:first-child {
+  .container>*:first-child {
     margin-top: 0;
   }
 
-  .container > *:last-child {
+  .container>*:last-child {
     margin-bottom: 0;
   }
-  
+
+  &+.find-search {
+    padding-top: 0;
+  }
+
 }
 
 .pagination {
@@ -2371,7 +2388,7 @@ h6 {
   &__desk {
     margin-top: 10px;
 
-    & > *:last-child {
+    &>*:last-child {
       margin-bottom: 0;
     }
   }
@@ -2520,6 +2537,7 @@ h6 {
     }
   }
 }
+
 /*Styling Selectbox END*/
 
 .filters-group {

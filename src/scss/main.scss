@@ -1463,6 +1463,10 @@ h6 {
     padding-top: 60px;
   }
 
+  @media screen and (max-width: 576px) {
+    padding-top: 40px;
+  }
+
   .title {
     text-align: center;
   }

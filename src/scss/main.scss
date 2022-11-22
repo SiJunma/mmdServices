@@ -5,9 +5,12 @@ $sectionPaddingDesk2: 80px 0;
 $sectionPaddingDesk3: 60px 0;
 $sectionPaddingDesk4: 40px 0;
 
+$bg-color-change-gray: #F1F5F6;
+$bg-color-change-blue: #0059B1;
+
 body {
   font-size: 20px;
-  font-family: "Inter", sans-serif;
+  font-family: 'Assistant', sans-serif;
   color: #202020;
 
   @media screen and (max-width: 993px) {
@@ -186,7 +189,7 @@ h6 {
 }
 
 .btn {
-  background-color: #3a89ff;
+  background-color: $bg-color-change-blue;
   border-radius: 56px;
   height: 76px;
   display: flex;
@@ -584,7 +587,7 @@ h6 {
     margin: 0;
     list-style: none;
     column-gap: 20px;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 600;
 
     @media screen and (max-width: 1400px) {
@@ -693,7 +696,7 @@ h6 {
 }
 
 .cards {
-  background-color: #0059b1;
+  background-color: $bg-color-change-gray;
   padding: $sectionPaddingDesk;
   color: #ffffff;
 
@@ -703,7 +706,6 @@ h6 {
 
   @media screen and (max-width: 768px) {
     padding: $sectionPaddingDesk3;
-    background-color: #0059b1;
   }
 
   @media screen and (max-width: 576px) {
@@ -712,6 +714,10 @@ h6 {
 
   .title {
     text-align: center;
+  }
+
+  h2.title {
+    color: #0059B1;
   }
 
   &__wrapper {
@@ -730,7 +736,7 @@ h6 {
   }
 
   &__item {
-    background-color: #3a89ff;
+    background-color: $bg-color-change-blue;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -828,7 +834,7 @@ h6 {
       -webkit-backface-visibility: hidden;
       /* Safari */
       backface-visibility: hidden;
-      background-color: #3a89ff;
+      background-color: $bg-color-change-blue;
 
       display: flex;
       flex-direction: column;
@@ -899,7 +905,7 @@ h6 {
   &_invert {
     background-color: #fff;
     padding: $sectionPaddingDesk;
-    box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.52);
+    // box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.52);
 
     @media screen and (max-width: 1400px) {
       padding: $sectionPaddingDesk2;
@@ -934,7 +940,7 @@ h6 {
 
       @media screen and (max-width: 768px) {
         padding: 30px 20px 30px;
-        background-color: #3a89ff;
+        background-color: $bg-color-change-blue;
       }
 
       .cards__item-back {
@@ -982,9 +988,9 @@ h6 {
 }
 
 .ta-list {
-  background-color: #0059b1;
+  background-color: $bg-color-change-gray;
   padding: $sectionPaddingDesk;
-  color: #ffffff;
+  // color: #ffffff;
 
   @media screen and (max-width: 1400px) {
     padding: $sectionPaddingDesk2;
@@ -992,7 +998,6 @@ h6 {
 
   @media screen and (max-width: 768px) {
     padding: $sectionPaddingDesk3;
-    background-color: #0059b1;
   }
 
   @media screen and (max-width: 576px) {
@@ -1052,7 +1057,7 @@ h6 {
 
     .title {
       margin-top: 0;
-      color: #ffffff;
+      color: #004181;
       text-align: left;
     }
 
@@ -1090,7 +1095,7 @@ h6 {
 
 .home-about {
   padding: $sectionPaddingDesk;
-  box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.52);
+  // box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.52);
 
   @media screen and (max-width: 1400px) {
     padding: $sectionPaddingDesk2;
@@ -1193,7 +1198,7 @@ h6 {
 
 .home-copy {
   padding: $sectionPaddingDesk;
-  box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.52);
+  // box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.52);
 
   @media screen and (max-width: 1400px) {
     padding: $sectionPaddingDesk2;
@@ -1243,7 +1248,7 @@ h6 {
 
 .home-semi {
   padding: $sectionPaddingDesk;
-  background: linear-gradient(90deg, #0059b1 0%, #0059b1 50%, #FFFFFF 50%);
+  background: linear-gradient(90deg, $bg-color-change-gray 0%, $bg-color-change-gray 50%, #FFFFFF 50%);
 
   @media screen and (max-width: 1400px) {
     padding: $sectionPaddingDesk2;
@@ -1257,7 +1262,7 @@ h6 {
   @media screen and (max-width: 768px) {
     padding: 0;
     box-shadow: none;
-    background: #0059b1;
+    background: $bg-color-change-gray;
   }
 
   &__wrapper {
@@ -1306,7 +1311,7 @@ h6 {
     }
 
     &.col-blue {
-      color: #fff;
+      // color: #fff;
       padding-right: 5em;
 
       @media screen and (max-width: 1200px) {
@@ -1322,7 +1327,7 @@ h6 {
       }
 
       .title {
-        color: #fff;
+        color: #444444;
       }
     }
 
@@ -1362,8 +1367,8 @@ h6 {
 
 .home-started {
   padding: $sectionPaddingDesk;
-  background-color: #0059b1;
-  color: #ffffff;
+  background-color: $bg-color-change-gray;
+  // color: #ffffff;
 
   @media screen and (max-width: 1400px) {
     padding: $sectionPaddingDesk2;
@@ -1371,10 +1376,6 @@ h6 {
 
   @media screen and (max-width: 1200px) {
     padding: $sectionPaddingDesk3;
-  }
-
-  @media screen and (max-width: 768px) {
-    background-color: #0059b1;
   }
 
   @media screen and (max-width: 576px) {
@@ -1396,7 +1397,7 @@ h6 {
   }
 
   .title {
-    color: #ffffff;
+    color: #004181;
   }
 
   .media {
@@ -1447,13 +1448,8 @@ h6 {
 }
 
 .find-search {
-  background-color: #0059b1;
-  color: #ffffff;
+  background-color: $bg-color-change-gray;
   padding-top: 100px;
-
-  @media screen and (max-width: 768px) {
-    background-color: #0059b1;
-  }
 
   @media screen and (max-width: 1400px) {
     padding-top: 80px;
@@ -1522,7 +1518,7 @@ h6 {
     margin-top: 45px;
     margin-bottom: 45px;
     padding-bottom: 35px;
-    border-bottom: 1px solid #0869ca;
+    border-bottom: 1px solid #929292;
 
     @media screen and (max-width: 576px) {
       margin-bottom: 35px;
@@ -1537,8 +1533,8 @@ h6 {
 
 .search-form {
   padding-top: 100px;
-  background-color: #0059b1;
-  color: #ffffff;
+  background-color: $bg-color-change-gray;
+  // color: #ffffff;
 
   @media screen and (max-width: 1400px) {
     padding-top: 80px;
@@ -1548,16 +1544,13 @@ h6 {
     padding-top: 60px;
   }
 
-  @media screen and (max-width: 768px) {
-    background-color: #0059b1;
-  }
-
   @media screen and (max-width: 576px) {
     padding-top: 40px;
   }
 
   .title {
     text-align: center;
+    color: #0059B1;
   }
 
   &__form {
@@ -1613,7 +1606,7 @@ h6 {
 .submit-resume {
   padding: $sectionPaddingDesk;
   background: #fff;
-  box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.52);
+  // box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.52);
 
   @media screen and (max-width: 1400px) {
     padding: $sectionPaddingDesk2;
@@ -1676,7 +1669,8 @@ h6 {
 
 .footer {
   padding: $sectionPaddingDesk;
-  box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.52);
+  background: $bg-color-change-blue;
+  // box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.52);
 
   @media screen and (max-width: 1400px) {
     padding: $sectionPaddingDesk2;
@@ -1794,10 +1788,12 @@ h6 {
   font-size: 14px;
   line-height: 120%;
   padding: 10px 0;
+  margin-top: -40px;
 
   @media screen and (max-width: 768px) {
     background: #0059b1;
     color: rgba(255, 255, 255, 0.46);
+    margin-top: -20px;
   }
 
   @media screen and (max-width: 375px) {
@@ -1828,8 +1824,7 @@ h6 {
 
 .contact-us {
   padding: $sectionPaddingDesk;
-  background-color: #0059b1;
-  color: #ffffff;
+  background-color: $bg-color-change-gray;
 
   @media screen and (max-width: 1400px) {
     padding: $sectionPaddingDesk2;
@@ -1863,7 +1858,7 @@ h6 {
   }
 
   .title {
-    color: #ffffff;
+    color: #0059B1;
   }
 
   .media {
@@ -1921,6 +1916,10 @@ h6 {
 
     a[href] {
       color: inherit;
+
+      &.btn {
+        color: #fff;
+      }
     }
 
     &>*:last-child {
@@ -1980,8 +1979,8 @@ h6 {
 
 .about-us {
   padding: $sectionPaddingDesk;
-  background-color: #0059b1;
-  color: #ffffff;
+  background-color: $bg-color-change-gray;
+  // color: #ffffff;
   font-weight: 300;
 
   @media screen and (max-width: 1400px) {
@@ -2001,7 +2000,7 @@ h6 {
   }
 
   .title {
-    color: #ffffff;
+    color: #004181;
   }
 
   .content {
@@ -2165,8 +2164,8 @@ h6 {
 
 .contractors {
   padding: $sectionPaddingDesk;
-  background-color: #0059b1;
-  color: #ffffff;
+  background-color: $bg-color-change-gray;
+  // color: #ffffff;
   font-weight: 300;
   line-height: 140%;
 
@@ -2176,10 +2175,6 @@ h6 {
 
   @media screen and (max-width: 1200px) {
     padding: $sectionPaddingDesk3;
-  }
-
-  @media screen and (max-width: 768px) {
-    background-color: #0059b1;
   }
 
   @media screen and (max-width: 576px) {
@@ -2193,7 +2188,7 @@ h6 {
   a[download] {
     display: flex;
     column-gap: 14px;
-    color: #a7caff;
+    color: #2b2e33;
     font-weight: 500;
     text-decoration: none;
 
@@ -2211,8 +2206,7 @@ h6 {
 
 .def-blue {
   padding: $sectionPaddingDesk;
-  background-color: #0059b1;
-  color: #ffffff;
+  background-color: $bg-color-change-gray;
   font-weight: 300;
   line-height: 140%;
 
@@ -2222,10 +2216,6 @@ h6 {
 
   @media screen and (max-width: 1200px) {
     padding: $sectionPaddingDesk3;
-  }
-
-  @media screen and (max-width: 768px) {
-    background-color: #0059b1;
   }
 
   @media screen and (max-width: 576px) {
@@ -2238,12 +2228,16 @@ h6 {
 
   a[href] {
     color: inherit;
+
+    &.btn {
+      color: #fff;
+    }
   }
 
   a[download] {
     display: flex;
     column-gap: 14px;
-    color: #a7caff;
+    color: #2b2e33;
     font-weight: 500;
     text-decoration: none;
 
@@ -2252,6 +2246,10 @@ h6 {
     }
 
     margin-bottom: 15px;
+  }
+
+  .title {
+    color: #004181;
   }
 
   .btn {
@@ -2313,8 +2311,7 @@ h6 {
 }
 
 .job-list {
-  background-color: #0059b1;
-  color: #ffffff;
+  background-color: $bg-color-change-gray;
   font-weight: 300;
   line-height: 140%;
   padding: $sectionPaddingDesk;
@@ -2330,10 +2327,6 @@ h6 {
     padding-bottom: 0;
   }
 
-  @media screen and (max-width: 768px) {
-    background-color: #0059b1;
-  }
-
   @media screen and (max-width: 576px) {
     padding: $sectionPaddingDesk4;
     padding-bottom: 0;
@@ -2341,6 +2334,7 @@ h6 {
 
   .title {
     text-align: center;
+    color: #0059B1;
   }
 
   &__item {
@@ -2349,7 +2343,7 @@ h6 {
     padding: 30px 30px;
     display: flex;
     flex-direction: column;
-    border: 1px solid #0869ca;
+    border: 1px solid #929292;
     transition: border-color 0.3s ease, background-color 0.3s ease;
     border-radius: 10px;
 
@@ -2380,7 +2374,7 @@ h6 {
   }
 
   &__info {
-    color: #9ec5ff;
+    color: #929292;
     font-weight: 500;
     font-size: 16px;
     display: flex;
@@ -2409,7 +2403,7 @@ h6 {
 }
 
 .filters-bar {
-  border-top: 1px solid #0869ca;
+  border-top: 1px solid #929292;
   margin-top: 45px;
   padding-top: 35px;
   display: flex;
@@ -2445,6 +2439,8 @@ h6 {
 
   .btn {
     width: 160px;
+    color: #0059b1;
+    border-color: #0059b1;
 
     @media screen and (max-width: 576px) {
       height: 42px;
@@ -2472,7 +2468,7 @@ h6 {
   align-items: center;
 
   background-color: transparent;
-  outline: 1px solid #0869ca;
+  outline: 1px solid #929292;
   height: 50px;
   color: #fff;
 
@@ -2501,6 +2497,7 @@ h6 {
   .select {
     cursor: pointer;
     display: block;
+    color: #0059b1;
   }
 
   .dropdown-menu {
@@ -2561,7 +2558,6 @@ h6 {
   padding-top: 20px;
 
   &__link {
-    color: #fff;
     font-weight: 500;
     font-size: 20px;
     text-decoration: none;

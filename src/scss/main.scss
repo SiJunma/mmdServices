@@ -1043,7 +1043,7 @@ h6 {
     a,
     button {
       text-decoration: none;
-      color: #ffffff;
+      color: $bg-color-change-blue;
       padding: 0;
       margin: 0;
       border: none;
@@ -1425,7 +1425,7 @@ h6 {
       font-weight: 500;
     }
 
-    a[href] {
+    a[href]:not(.btn) {
       color: inherit;
     }
 
@@ -2278,7 +2278,7 @@ h6 {
   font-size: 18px;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: #202020;
 
   .prev,
   .next {
@@ -2297,11 +2297,11 @@ h6 {
   }
 
   .prev {
-    background-image: url("data:image/svg+xml,%3Csvg width='16' height='17' viewBox='0 0 16 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.5 8.90539L15.2443 0.33313V16.7919L0.5 8.90539Z' fill='white'/%3E%3C/svg%3E%0A");
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='17' viewBox='0 0 16 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.5 8.90539L15.2443 0.33313V16.7919L0.5 8.90539Z' fill='%23202020'/%3E%3C/svg%3E%0A");
   }
 
   .next {
-    background-image: url("data:image/svg+xml,%3Csvg width='16' height='17' viewBox='0 0 16 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.5 8.11585L0.755711 16.6881L0.755712 0.229369L15.5 8.11585Z' fill='white'/%3E%3C/svg%3E%0A");
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='17' viewBox='0 0 16 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.5 8.11585L0.755711 16.6881L0.755712 0.229369L15.5 8.11585Z' fill='%23202020'/%3E%3C/svg%3E%0A");
   }
 
   a[href] {
@@ -2364,11 +2364,11 @@ h6 {
 
     &:hover {
       color: inherit;
-      background-color: #025fbb;
-      border-color: #1c8bf9;
+      background-color: #f1f1f1;
+      border-color: #000;
 
       .title {
-        color: #ffffff;
+        color: #2b2e33;
       }
     }
   }

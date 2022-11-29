@@ -1182,6 +1182,10 @@ h6 {
       width: 100%;
     }
 
+    &>*:first-child {
+      margin-top: 0;
+    }
+
     &>*:last-child {
       margin-bottom: 0;
     }
@@ -1248,7 +1252,7 @@ h6 {
 
 .home-semi {
   padding: $sectionPaddingDesk;
-  background: linear-gradient(90deg, $bg-color-change-gray 0%, $bg-color-change-gray 50%, #FFFFFF 50%);
+  background: $bg-color-change-gray;
 
   @media screen and (max-width: 1400px) {
     padding: $sectionPaddingDesk2;
@@ -1263,6 +1267,54 @@ h6 {
     padding: 0;
     box-shadow: none;
     background: $bg-color-change-gray;
+  }
+
+  &_white {
+    background: #fff;
+    padding-bottom: 0;
+
+    .title {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+
+      img {
+        display: block;
+        margin-bottom: 15px;
+        object-position: center;
+        object-fit:contain;
+        height: 62px;
+        max-width: 76px;
+      }
+    }
+
+    .home-semi__wrapper {
+      border-bottom: 1px solid #D9D9D9;
+
+      padding-bottom: 100px;
+    
+      @media screen and (max-width: 1400px) {
+        padding-bottom: 80px;
+      }
+    
+      @media screen and (max-width: 1200px) {
+        padding-bottom: 70px;
+      }
+    
+      @media screen and (max-width: 768px) {
+        padding: 0;
+      }
+    }
+
+    .col-white {
+      .title {
+  
+        img {
+          max-width: 70px;
+        }
+      }
+    }
   }
 
   &__wrapper {
@@ -1281,7 +1333,6 @@ h6 {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    font-weight: 300;
     justify-content: center;
 
     @media screen and (max-width: 1200px) {
@@ -1324,10 +1375,11 @@ h6 {
 
       @media screen and (max-width: 768px) {
         padding-right: 0;
+        padding-bottom: 0;
       }
 
       .title {
-        color: #444444;
+        color: #004181;
       }
     }
 
@@ -1346,16 +1398,6 @@ h6 {
 
       @media screen and (max-width: 768px) {
         padding-left: 0;
-
-        &::before {
-          content: '';
-          display: block;
-          position: absolute;
-          width: 100vw;
-          background: #fff;
-          height: 100%;
-          z-index: -1;
-        }
       }
 
       .title {
@@ -1415,14 +1457,13 @@ h6 {
   }
 
   .content {
-    font-weight: 300;
 
     @media screen and (max-width: 1200px) {
       font-size: 18px;
     }
 
     b {
-      font-weight: 500;
+      font-weight: 600;
     }
 
     a[href]:not(.btn) {
@@ -2207,7 +2248,6 @@ h6 {
 .def-blue {
   padding: $sectionPaddingDesk;
   background-color: $bg-color-change-gray;
-  font-weight: 300;
   line-height: 140%;
 
   @media screen and (max-width: 1400px) {

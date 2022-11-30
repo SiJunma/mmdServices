@@ -1269,25 +1269,25 @@ h6 {
     background: $bg-color-change-gray;
   }
 
+  .title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    img {
+      display: block;
+      margin-bottom: 15px;
+      object-position: center;
+      object-fit:contain;
+      height: 62px;
+      max-width: 76px;
+    }
+  }
+
   &_white {
     background: #fff;
     padding-bottom: 0;
-
-    .title {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      align-items: center;
-
-      img {
-        display: block;
-        margin-bottom: 15px;
-        object-position: center;
-        object-fit:contain;
-        height: 62px;
-        max-width: 76px;
-      }
-    }
 
     .home-semi__wrapper {
       border-bottom: 1px solid #D9D9D9;

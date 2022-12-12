@@ -349,6 +349,7 @@ $bg-color-change-blue: #0059B1;
       width: 340px;
       height: 340px;
       border-radius: 50%;
+      object-fit: cover;
 
       @media screen and (max-width: 1600px) {
         width: 320px;

@@ -539,9 +539,16 @@ h6 {
 
   .logo-brand {
     img {
-      height: 45px;
-      width: auto;
+      max-height: 40px;
+      width: 120px;
+      max-width: 120px;
       object-fit: contain;
+      object-position: left;
+
+      @media screen and (max-width: 1400px) {
+        height: 35px;
+        width: auto;
+      }
 
       @media screen and (max-width: 1200px) {
         height: 31px;
@@ -665,8 +672,11 @@ h6 {
     margin: 0;
     list-style: none;
     column-gap: 18px;
+    width: 120px;
+    justify-content: flex-end;
 
     @media screen and (max-width: 1400px) {
+      width: auto;
       margin-left: auto;
       column-gap: 12px;
     }
@@ -1182,11 +1192,11 @@ h6 {
       width: 100%;
     }
 
-    &>*:first-child {
+    *:first-child {
       margin-top: 0;
     }
 
-    &>*:last-child {
+    *:last-child {
       margin-bottom: 0;
     }
 

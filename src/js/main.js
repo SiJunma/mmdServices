@@ -130,13 +130,13 @@ $( document ).ready(function() {
     $(modalId).find('.modal-body').append('<div id="submitResponse"></div>')
 
     if(stage == 'PROCESS') {
-      $(modalId).find('#submitResponse').html('<img class="spinner" src="img/spinner-icon-0.webp" alt="Loading">')
+      $(modalId).find('#submitResponse').html('<img class="spinner" src="img/spinner-icon-0.webp" alt="Loading">');
     }; 
     if(stage == 'SUCCESS') {
       $(modalId).find('#submitResponse').html('<p>Form has been submitted successfully!</p><button class="btn submit-close" type="button">Close</button>');
     }; 
     if (stage == 'FAILED') {
-      $(modalId).find('#submitResponse').html('<p>Something went wrong. Try again later.</p><button class="btn submit-close" type="button">Close</button>');
+      $(modalId).find('#submitResponse').html('<p>Something went wrong. Try again later.</p><button class="btn btn-close" type="button">Close</button>');
     };
 
     submitClose('.submit-close');

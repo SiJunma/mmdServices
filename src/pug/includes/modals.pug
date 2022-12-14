@@ -90,7 +90,7 @@
 
             button.btn(href="#" type="submit") Submit
 
-.modal#memberOverview
+.modal.memberOverview#memberOverview
   // Modal content
   .modal-content
     .modal-header
@@ -231,3 +231,21 @@
             input.input-form#jobApply_applyerReff(type="text" name="Refferal" placeholder="Were you reffered by someone?") 
 
           button.btn(type="submit") Submit
+
+
+.modal#applySucces
+  // Modal content
+  .modal-content
+
+    .modal-body
+      p Form has been submitted successfully!
+      button.btn.submit-close(type="button") Close
+
+.modal#applyFail
+  // Modal content
+  .modal-content
+
+    .modal-body
+      p Something went wrong. Try again later.
+      button.btn.submit-close(type="button") Close
+

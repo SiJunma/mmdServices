@@ -35,40 +35,24 @@ $( document ).ready(function() {
       e.stopPropagation();
       
       let targetModal = $($( this ).attr('data-target'));
-      
-      let closeModal = function() {
-        targetModal.hide();
-        targetModal.find('.input-form').val('');
-        targetModal.find('.input-file-box').text('No file chosen');
-        $('body').css('overflow', '');
-        // $(document).unbind('click', handler);
-      };
-
-      let handler = function(e) {
-        if ($(e.target).hasClass('modal')) {
-          e.stopPropagation();
-          closeModal();
-        }
-      }
-
       targetModal.css('display', 'flex');
       $('body').css('overflow', 'hidden');
-      // $(document).bind('click', handler);
 
-      let closeBtn = targetModal.find('.btn-close');
-      closeBtn.one('click', function(e) {
-        e.preventDefault();
-        e.stopPropagation();
+      function closeModalBtn(btn) {
+        $(btn).on('click', function(e) {
+          e.preventDefault();
+          e.stopPropagation();
 
-        closeModal();
-      });
-
-      //FOR FILTER APPLY BTN
-      let applyClose = targetModal.find('.apply-close');
-      applyClose.one('click', function(e) {
-        closeModal();
-      });
-      //END FOR FILTER APPLY BTN
+          $( '.modal' ).hide();
+          $( '.modal' ).find('.input-form').val('');
+          $( '.modal' ).find('.input-file-actual').val('');
+          $( '.modal' ).find('.input-file-box').text('No file chosen');
+          $('body').css('overflow', '');
+        });
+      }
+      closeModalBtn('.btn-close');
+      closeModalBtn('.submit-close');
+      closeModalBtn('.apply-close');
     })
   }
   modalInit('.modal-open');
@@ -141,24 +125,6 @@ $( document ).ready(function() {
 
     submitClose('.submit-close');
   };
-
-  function submitClose(btn) {
-    $(btn).on('click', function(e) {
-      e.preventDefault();
-      e.stopPropagation();
-
-      let targetModal = $( this ).closest('.modal');
-      targetModal.hide();
-      targetModal.find('.input-form').val('');
-      targetModal.find('.input-file-box').text('No file chosen');
-      $('body').css('overflow', '');
-
-      $( this ).closest('.modal-body').find('.apply-form').show();
-      $( this ).closest('.modal-content').find('.modal-header').show();
-      $( this ).closest('.modal-body').find('#submitResponse').remove();
-    });
-  };
-  
   /*End Submit scenario*/
 
 });

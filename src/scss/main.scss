@@ -2513,14 +2513,12 @@ h6 {
     column-gap: 10px;
     align-items: center;
     font-weight: 500;
-    margin-right: auto;
 
     @media screen and (max-width: 576px) {
       flex-direction: column;
       row-gap: 5px;
       justify-content: center;
       font-size: 16px;
-      margin-left: auto;
 
       max-width: 300px;
       width: 100%;

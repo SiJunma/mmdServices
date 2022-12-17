@@ -1565,9 +1565,18 @@ h6 {
     }
   }
 
+  .find-search-form {
+    .btn {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 300px;
+      width: 100%;
+    }
+  }
+
   .filters-bar {
     margin-top: 45px;
-    margin-bottom: 45px;
+    margin-bottom: 35px;
     padding-bottom: 35px;
     border-bottom: 1px solid #929292;
 
@@ -2486,8 +2495,11 @@ h6 {
   justify-content: center;
   column-gap: 30px;
   row-gap: 20px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 
-  font-weight: 700;
+  // font-weight: 700;
   font-size: 18px;
   align-items: center;
   flex-wrap: wrap;
@@ -2501,16 +2513,24 @@ h6 {
     column-gap: 10px;
     align-items: center;
     font-weight: 500;
+    margin-right: auto;
 
     @media screen and (max-width: 576px) {
       flex-direction: column;
       row-gap: 5px;
       justify-content: center;
       font-size: 16px;
+      margin-left: auto;
 
       max-width: 300px;
       width: 100%;
     }
+  }
+
+  .title {
+    margin-top: 0;
+    margin-bottom: -10px;
+    margin-right: auto;
   }
 
   .btn {
@@ -2622,6 +2642,7 @@ h6 {
   flex-wrap: wrap;
   gap: 20px;
   padding: 20px 0;
+  margin-right: auto;
 }
 
 .job-single {

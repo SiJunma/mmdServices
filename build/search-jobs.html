@@ -59,23 +59,45 @@
         <div class="container"> 
           <div class="content"> 
             <h2 class="title">Search Available Jobs</h2>
-            <form class="find-search__form" action="">
-              <input id="jobTitle" required type="text" name="jobTitle" placeholder="Job title or keyword">
-              <input id="jobZip" required type="text" name="jobZip" placeholder="Location or Zip Code"><a class="btn" href="search-jobs.html?filters:title=text&amp;location=text">Search Jobs</a>
-            </form>
-          </div>
-          <div class="filters-bar"> 
-            <button class="btn btn-filters modal-open" type="button" data-target="#searchFilters">Filters</button>
-            <div class="filters-bar__select">Sort by:
-              <div class="dropdown">
-                <div class="select"><span>Newest first</span></div>
-                <input type="hidden" name="Sorting">
-                <ul class="dropdown-menu">
-                  <li id="newest">Newest first</li>
-                  <li id="oldest">Oldest first</li>
-                </ul>
+            <form class="find-search-form" action="">
+              <div class="find-search__form">
+                <input id="jobTitle" required type="text" name="jobTitle" placeholder="Job title or keyword">
+                <input id="jobZip" required type="text" name="jobZip" placeholder="Location or Zip Code">
               </div>
-            </div>
+              <div class="filters-bar"> 
+                <h5 class="title">Choose categoties: </h5>
+                <div class="filters-group">
+                  <label class="checkbox">Remote Positions
+                    <input type="checkbox"><span class="checkmark"></span>
+                  </label>
+                  <label class="checkbox">Enterprise Applications
+                    <input type="checkbox"><span class="checkmark"></span>
+                  </label>
+                  <label class="checkbox">Leadership
+                    <input type="checkbox"><span class="checkmark"></span>
+                  </label>
+                  <label class="checkbox">Open Source
+                    <input type="checkbox"><span class="checkmark"></span>
+                  </label>
+                  <label class="checkbox">Technical Sales
+                    <input type="checkbox"><span class="checkmark"></span>
+                  </label>
+                  <label class="checkbox">Support / Network / Systems / Voice
+                    <input type="checkbox"><span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="filters-bar__select">Sort by:
+                  <div class="dropdown">
+                    <div class="select"><span>Newest first</span></div>
+                    <input type="hidden" name="Sorting">
+                    <ul class="dropdown-menu">
+                      <li id="newest">Newest first</li>
+                      <li id="oldest">Oldest first</li>
+                    </ul>
+                  </div>
+                </div>
+              </div><a class="btn" href="search-jobs.html?filters:title=text&amp;location=text">Search Jobs</a>
+            </form>
           </div>
         </div>
       </section>

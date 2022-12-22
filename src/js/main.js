@@ -127,7 +127,46 @@ $( document ).ready(function() {
   };
   /*End Submit scenario*/
 
+  
+
+  function checkIn(input) {
+    input.addClass('ion-select');
+    input.prop( "checked", true );
+  }
+
+  function checkOut(input) {
+    input.removeClass('ion-select');
+    input.prop( "checked", false );
+  }
+
+  $('.filters-group label').on('click', function(e) {
+    e.preventDefault();
+
+      if(!$(this).find('input').hasClass('ion-select') && $(this).find('input').hasClass('ion-all')) {
+        
+        checkOut($(this).closest('.filters-group').find('input.ion-select'));
+        checkIn($(this).find('input'));
+
+      } else if (!$(this).find('input').hasClass('ion-select') && !$(this).find('input').hasClass('ion-all')) {
+
+        checkIn($(this).find('input'));
+        checkOut($(this).closest('.filters-group').find('input.ion-select.ion-all'));
+
+      } else if($(this).find('input').hasClass('ion-select') && $(this).find('input').hasClass('ion-all')) {
+
+      } else if($(this).find('input').hasClass('ion-select') && !$(this).find('input').hasClass('ion-all')) {
+        checkOut($(this).find('input'));
+        checkOut($(this).closest('.filters-group').find('input.ion-select.ion-all'));
+      }
+   
+  });
+
+
+  
+
 });
 
 
 
+
+          

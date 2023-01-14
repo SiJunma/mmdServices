@@ -138,6 +138,24 @@ $( document ).ready(function() {
     input.removeClass('ion-select');
     input.prop( "checked", false );
   }
+  
+  if($('.filters-group input.ion-select:not(.ion-all)').length > 0) {
+    checkOut($('.filters-group input.ion-all.ion-select'));
+  }
+
+  $('label.checkbox').on('click', function(e) {
+    e.preventDefault();
+
+    if($(this).closest('.filters-group').length > 0) {
+      return;
+    } else {
+      if(!$(this).find('input').hasClass('ion-select')) {
+        checkIn($(this).find('input'));
+      } else {
+        checkOut($(this).find('input'));
+      }
+    }
+  });
 
   $('.filters-group label').on('click', function(e) {
     e.preventDefault();
@@ -158,12 +176,7 @@ $( document ).ready(function() {
         checkOut($(this).find('input'));
         checkOut($(this).closest('.filters-group').find('input.ion-select.ion-all'));
       }
-   
   });
-
-
-  
-
 });
 
 

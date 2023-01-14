@@ -147,7 +147,9 @@ $bg-color-change-blue: #0059B1;
 }
 
 
-#resumeApply {
+#resumeApply,
+#joinApply,
+#referFriend {
   .modal-content {
     display: flex;
     flex-direction: column;
@@ -539,5 +541,23 @@ $bg-color-change-blue: #0059B1;
     align-items: center;
     padding-top: 30px;
     padding-bottom: 30px;
+  }
+}
+
+#submitResponse {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .modal-content {
+    background:transparent;
+    box-shadow: none;
+  }
+
+  .spinner {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
   }
 }

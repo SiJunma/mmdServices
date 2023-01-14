@@ -132,13 +132,15 @@
           </div>
           <div class="footer__item"> 
             <h6 class="title"> <img src="img/icon6.svg" alt="Recently Added Jobs"><span>Join Our Team</span></h6>
-            <p><b>Pretium id nunc consectetur tempor non. Et maecenas ipsum scelerisque tristique sed enim senectus nisl, et. Nec ridiculus arcu sit a et tristique duis.</b></p><a class="btn" href="category-jobs.html"> Look at Jobs</a>
+            <p><b>Pretium id nunc consectetur tempor non. Et maecenas ipsum scelerisque tristique sed enim senectus nisl, et. Nec ridiculus arcu sit a et tristique duis.</b></p>
+            <button class="btn modal-open" type="button" data-target="#resumeApply"> Our team</button>
           </div>
           <div class="footer__item"> 
             <h6 class="title"> <img src="img/icon7.svg" alt="Recently Added Jobs"><span>Get in touch</span></h6>
             <p>MMD Services, Inc. 211 W. Wacker Dr. Suite 1500C, Chicago, IL 60606</p>
             <p> <a href="tel:(847) 322-1326">(847) 322-1326</a></p>
-            <p> <a href="mailto:mdubov@mmdtech.com">mdubov@mmdtech.com </a></p>
+            <p> <a href="mailto:mdubov@mmdtech.com">mdubov@mmdtech.com</a></p>
+            <button class="btn modal-open" type="button" data-target="#referFriend">Refer a Friend  </button>
           </div>
           <div class="footer__certificate"> <img src="img/footer-img1.svg" alt="Certified"></div>
         </div>
@@ -367,6 +369,10 @@
         </div>
       </div>
     </div>
+    <div class="modal" id="submitResponse" style="display:none;">
+      <!-- Modal content-->
+      <div class="modal-content"><img class="spinner" src="img/spinner-icon-0.webp" alt="Loading"></div>
+    </div>
     <div class="modal" id="applySucces">
       <!-- Modal content-->
       <div class="modal-content">
@@ -382,6 +388,69 @@
         <div class="modal-body">
           <p>Something went wrong. Try again later.</p>
           <button class="btn submit-close" type="button">Close</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="referFriend">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="title">
+            <svg width="57" height="53" viewBox="0 0 57 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M43.8862 15.8986C38.273 10.2363 29.1651 10.2363 23.5518 15.8986C17.9386 21.561 17.9386 30.7487 23.5518 36.4111C28.4523 41.3544 36.0059 41.9836 41.5795 38.3085C41.3122 38.7879 41.3815 39.407 41.7874 39.8165C42.1537 40.186 42.7081 40.2759 43.1635 40.0861C43.312 40.3857 43.51 40.6554 43.7476 40.905L51.1032 48.325C52.3605 49.5933 54.4197 49.5933 55.677 48.325C56.9342 47.0567 56.9342 44.9795 55.677 43.7112L48.3213 36.2912C48.0837 36.0515 47.8066 35.8518 47.5195 35.702C47.7175 35.2426 47.6383 34.6734 47.2621 34.2939C46.8562 33.8845 46.2424 33.8245 45.7672 34.0842C49.4103 28.4618 48.7866 20.842 43.8862 15.8986ZM41.3419 33.8545C37.1345 38.0988 30.3036 38.0988 26.0862 33.8545C21.8689 29.6102 21.8788 22.7195 26.0862 18.4652C30.2937 14.2209 37.1246 14.2209 41.3419 18.4652C45.5593 22.7095 45.5593 29.6002 41.3419 33.8545Z" fill="#0059B1"/>
+<path d="M28.9969 23.6981V26.9937C28.9969 27.2833 28.987 27.5229 28.9573 27.7227C28.9375 27.9224 28.8781 28.1221 28.789 28.3319C28.6504 28.6814 28.4128 28.951 28.0861 29.1408C27.7594 29.3305 27.3634 29.4304 26.8982 29.4304C26.4725 29.4304 26.126 29.3605 25.8389 29.2306C25.5617 29.1008 25.334 28.8811 25.1558 28.5815C25.0667 28.4217 24.9875 28.232 24.938 28.0323C24.8786 27.8225 24.8489 27.6228 24.8489 27.4331C24.8489 27.2333 24.9083 27.0835 25.0172 26.9737C25.1261 26.8638 25.2647 26.8139 25.4429 26.8139C25.6112 26.8139 25.7399 26.8638 25.8191 26.9637C25.9082 27.0636 25.9676 27.2134 26.0171 27.4231C26.0666 27.6428 26.1161 27.8225 26.1656 27.9524C26.2151 28.0822 26.2943 28.192 26.4032 28.2919C26.5121 28.3818 26.6804 28.4317 26.8883 28.4317C27.4426 28.4317 27.7297 28.0223 27.7297 27.1934V23.7181C27.7297 23.4584 27.7891 23.2687 27.898 23.1388C28.0069 23.009 28.1653 22.9491 28.3534 22.9491C28.5514 22.9491 28.6999 23.009 28.8187 23.1388C28.9375 23.2687 28.9969 23.4384 28.9969 23.6981Z" fill="#0059B1"/>
+<path d="M33.1055 22.9291C33.749 22.9291 34.3034 23.0589 34.7687 23.3285C35.234 23.5882 35.5805 23.9677 35.8181 24.457C36.0557 24.9464 36.1745 25.5156 36.1745 26.1747C36.1745 26.6641 36.1052 27.1035 35.9765 27.5029C35.8478 27.9024 35.6498 28.2419 35.3924 28.5415C35.135 28.8311 34.8083 29.0608 34.4321 29.2106C34.0559 29.3604 33.6203 29.4403 33.1253 29.4403C32.6403 29.4403 32.2047 29.3604 31.8186 29.2006C31.4325 29.0409 31.1157 28.8212 30.8484 28.5315C30.591 28.2419 30.393 27.8924 30.2643 27.4929C30.1356 27.0835 30.0663 26.6441 30.0663 26.1747C30.0663 25.6954 30.1356 25.246 30.2742 24.8465C30.4128 24.447 30.6108 24.0975 30.8682 23.8179C31.1256 23.5383 31.4424 23.3186 31.8186 23.1688C32.2047 22.999 32.6304 22.9291 33.1055 22.9291ZM34.8974 26.1547C34.8974 25.6954 34.8281 25.2959 34.6796 24.9564C34.5311 24.6168 34.3232 24.3671 34.046 24.1874C33.7688 24.0176 33.4619 23.9277 33.1055 23.9277C32.8581 23.9277 32.6205 23.9777 32.4027 24.0675C32.1849 24.1674 32.0067 24.3072 31.8483 24.487C31.6899 24.6667 31.5711 24.9064 31.482 25.186C31.3929 25.4757 31.3434 25.7952 31.3434 26.1448C31.3434 26.5043 31.3929 26.8238 31.482 27.1135C31.5711 27.4031 31.6998 27.6427 31.8582 27.8325C32.0166 28.0222 32.2047 28.162 32.4225 28.2619C32.6304 28.3518 32.868 28.4017 33.1155 28.4017C33.4421 28.4017 33.7391 28.3218 34.0064 28.162C34.2737 28.0023 34.4915 27.7426 34.6499 27.4031C34.8182 27.0735 34.8974 26.6541 34.8974 26.1547Z" fill="#0059B1"/>
+<path d="M39.9263 29.3205H38.0255C37.7483 29.3205 37.5503 29.2606 37.4315 29.1307C37.3127 29.0109 37.2533 28.8112 37.2533 28.5415V23.8079C37.2533 23.5283 37.3127 23.3285 37.4315 23.2087C37.5503 23.0889 37.7483 23.0289 38.0156 23.0289H40.0352C40.3322 23.0289 40.5896 23.0489 40.8074 23.0889C41.0251 23.1288 41.2231 23.1987 41.3914 23.2986C41.5399 23.3884 41.6686 23.4983 41.7874 23.6381C41.8963 23.7779 41.9854 23.9277 42.0448 24.0875C42.1042 24.2473 42.1339 24.4271 42.1339 24.6068C42.1339 25.236 41.8171 25.6953 41.1934 25.985C42.0151 26.2446 42.421 26.7639 42.421 27.5229C42.421 27.8724 42.3319 28.192 42.1537 28.4716C41.9755 28.7512 41.7379 28.961 41.431 29.0908C41.2429 29.1707 41.0251 29.2306 40.7776 29.2606C40.5302 29.2905 40.253 29.3205 39.9263 29.3205ZM38.5205 23.9876V25.6155H39.6788C39.9956 25.6155 40.2332 25.5855 40.4114 25.5256C40.5797 25.4657 40.7183 25.3558 40.8074 25.186C40.8767 25.0662 40.9162 24.9364 40.9162 24.7866C40.9162 24.467 40.8073 24.2573 40.5797 24.1574C40.352 24.0575 40.0154 23.9976 39.5501 23.9976H38.5205V23.9876ZM39.8273 26.5242H38.5106V28.3618H39.8669C40.7183 28.3618 41.1439 28.0522 41.1439 27.433C41.1439 27.1134 41.035 26.8837 40.8074 26.7439C40.5995 26.6041 40.2728 26.5242 39.8273 26.5242Z" fill="#0059B1"/>
+<path d="M39.748 52.9588H1.16819C0.524694 52.9588 0 52.4295 0 51.7804V1.17842C0 0.529288 0.524694 0 1.16819 0H39.748C40.3915 0 40.9162 0.529288 40.9162 1.17842V7.62974C40.9162 8.27887 40.3915 8.80816 39.748 8.80816C39.1045 8.80816 38.5798 8.27887 38.5798 7.62974V2.35683H2.33637V50.612H38.5798V46.2478C38.5798 45.5987 39.1045 45.0694 39.748 45.0694C40.3915 45.0694 40.9162 45.5987 40.9162 46.2478V51.7904C40.9162 52.4395 40.3915 52.9588 39.748 52.9588Z" fill="#0059B1"/>
+<path d="M32.6003 7.46986H6.57353C6.05874 7.46986 5.64294 7.05042 5.64294 6.53112C5.64294 6.01182 6.04884 5.5824 6.57353 5.5824H32.6102C33.125 5.5824 33.5408 6.00183 33.5408 6.52113C33.5408 7.04044 33.1151 7.46986 32.6003 7.46986Z" fill="#0059B1"/>
+<path d="M25.2942 12.6029H6.31615C5.93995 12.6029 5.63306 12.1835 5.63306 11.6642C5.63306 11.1449 5.93995 10.7255 6.31615 10.7255H25.2942C25.6704 10.7255 25.9773 11.1449 25.9773 11.6642C25.9773 12.1835 25.6704 12.6029 25.2942 12.6029Z" fill="#0059B1"/>
+<path d="M25.2942 41.7737H6.31615C5.93995 41.7737 5.63306 41.3543 5.63306 40.835C5.63306 40.3157 5.93995 39.8962 6.31615 39.8962H25.2942C25.6704 39.8962 25.9773 40.3157 25.9773 40.835C25.9773 41.3543 25.6704 41.7737 25.2942 41.7737Z" fill="#0059B1"/>
+<path d="M17.5822 18.8246H6.04885C5.82115 18.8246 5.63306 18.4052 5.63306 17.8859C5.63306 17.3666 5.82115 16.9471 6.04885 16.9471H17.5822C17.8099 16.9471 17.998 17.3666 17.998 17.8859C17.998 18.4052 17.8099 18.8246 17.5822 18.8246Z" fill="#0059B1"/>
+<path d="M17.5822 27.0935H6.04885C5.82115 27.0935 5.63306 26.6741 5.63306 26.1548C5.63306 25.6355 5.82115 25.2161 6.04885 25.2161H17.5822C17.8099 25.2161 17.998 25.6355 17.998 26.1548C17.998 26.6741 17.8099 27.0935 17.5822 27.0935Z" fill="#0059B1"/>
+<path d="M17.5822 35.8418H6.04885C5.82115 35.8418 5.63306 35.4224 5.63306 34.9031C5.63306 34.3838 5.82115 33.9644 6.04885 33.9644H17.5822C17.8099 33.9644 17.998 34.3838 17.998 34.9031C17.998 35.4124 17.8099 35.8418 17.5822 35.8418Z" fill="#0059B1"/>
+<path d="M32.6003 47.7057H6.57353C6.05874 47.7057 5.64294 47.2863 5.64294 46.767C5.64294 46.2477 6.05874 45.8282 6.57353 45.8282H32.6102C33.125 45.8282 33.5408 46.2477 33.5408 46.767C33.5408 47.2863 33.1151 47.7057 32.6003 47.7057Z" fill="#0059B1"/>
+</svg>Refer a Friend
+          </h3>
+          <button class="btn-close" aria-label="Close modal" type="button"></button>
+        </div>
+        <div class="modal-body">
+          <p>Let's Network! MMD offers $250 referral fee for all positions after a guarantee period is met. If we have a position for your referral, a MMD recruiter will reach out to you.</p><br>
+          <div class="apply-form">
+            <form action=""><span class="title">Referred By </span>
+              <div class="form_input">
+                <input class="input-form" id="referFriend_referredName" required type="text" name="Full name" placeholder="Full name">
+              </div>
+              <div class="btn-group">
+                <div class="form_input">
+                  <input class="input-form" id="referFriend_referredMail" required type="text" name="E-Mail" placeholder="E-mail">
+                </div>
+                <div class="form_input">
+                  <input class="input-form" id="referFriend_referredPhone" required type="tel" name="Phone number" placeholder="Phone number">
+                </div>
+              </div><br><span class="title">Referral Details</span>
+              <div class="form_input">
+                <input class="input-form" id="referFriend_referalName" required type="text" name="Full name" placeholder="Full name">
+              </div>
+              <div class="btn-group">
+                <div class="form_input">
+                  <input class="input-form" id="referFriend_referalMail" required type="text" name="E-Mail" placeholder="E-mail">
+                </div>
+                <div class="form_input">
+                  <input class="input-form" id="referFriend_referalPhone" required type="tel" name="Phone number" placeholder="Phone number">
+                </div>
+              </div>
+              <div class="btn-file">
+                <label class="btn input-file-btn" for="referFriend_Resume">Upload Resume</label>
+                <div class="btn-file__siblings"><span class="input-file-box">No file chosen</span>
+                  <input class="input-form input-file-actual" id="referFriend_Resume" hidden type="file" name="Resume">
+                </div>
+              </div>
+              <div class="form_input">
+                <input class="input-form" id="referFriend_jobTitle" required type="text" name="Job Title" placeholder="Job Title you are applying for">
+              </div>
+              <button class="btn" type="submit">Submit</button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
